@@ -4,9 +4,9 @@ Three layers. Each layer only ever points *down* at the one beneath it, so any a
 traced to a page/cell/line in a source file.
 
 ```
-Layer 2  CLAIMS + CONFLICTS      (Day 2, done)  what we believe, under which conditions, with how much support
-Layer 1  ENTITIES + ALIASES      (Day 2, done)    what the things are, and why two labels are (or are not) the same thing
-Layer 0  SEGMENTS                (Day 1, done)  what each source literally says, and exactly where
+Layer 2  CLAIMS + CONFLICTS      (implemented)  what we believe, under which conditions, with how much support
+Layer 1  ENTITIES + ALIASES      (implemented)    what the things are, and why two labels are (or are not) the same thing
+Layer 0  SEGMENTS                (implemented)  what each source literally says, and exactly where
 ```
 
 ## Layer 0 - Segment (implemented: `src/aegis_kb/schema.py`)

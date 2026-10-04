@@ -1,4 +1,4 @@
-"""Day-3 tests: entity linking in questions, the answer layer, the Gemini-composer guardrails, and the full evaluation."""
+"""Answer-layer tests: entity linking in questions, the answer layer, the Gemini-composer guardrails, and the full evaluation."""
 import pytest
 from pathlib import Path
 

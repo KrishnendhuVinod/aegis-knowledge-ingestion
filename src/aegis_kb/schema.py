@@ -2,7 +2,7 @@
 
 Every parser, whatever the file format, emits Segments. A Segment is the smallest
 unit that we can point at in a source ("operator_manual, page 1, section 4.3,
-bullet 2"). Facts extracted later (Day 2) reference segment_ids, so provenance is
+bullet 2"). Facts extracted later (claims) reference segment_ids, so provenance is
 structural: a claim cannot exist without pointing at the segment(s) it came from.
 
 Two separate numbers are kept on purpose:

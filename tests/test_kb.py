@@ -1,4 +1,4 @@
-"""Day-2 tests: entities/aliases, claims, scopes, conflicts, gaps. Image documents come from the Gemini-reading fixture."""
+"""Knowledge-base tests: entities/aliases, claims, scopes, conflicts, gaps. Image documents come from the Gemini-reading fixture."""
 import json
 from pathlib import Path
 

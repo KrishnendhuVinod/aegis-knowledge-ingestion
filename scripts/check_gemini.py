@@ -1,11 +1,4 @@
-"""Verify your Gemini key + model BEFORE running ingestion.
 
-    python scripts/check_gemini.py
-
-Lists the models your key can call (free-tier availability differs per account and
-changes over time) and makes one tiny test call with GEMINI_MODEL. If the default
-model is unavailable, copy a name from the printed list into .env as GEMINI_MODEL.
-"""
 import os
 import sys
 

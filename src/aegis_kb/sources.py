@@ -7,7 +7,7 @@ would add noise to the one place we want an auditable, explainable decision.
 
 trust_rank: 1 = most authoritative ... 5 = ignore for answers.
 This rank is only a TIE-BREAKER hint. Conflicts are never resolved by rank alone;
-they are stored explicitly (Day 3) with both sides and the applicability scope.
+they are stored explicitly (see conflicts.py) with both sides and the applicability scope.
 
 sw_scope: software-revision range the document claims to describe. This is what
 lets us keep "180 bar (<3.2)" and "200 bar (>=3.2)" side by side without conflict.

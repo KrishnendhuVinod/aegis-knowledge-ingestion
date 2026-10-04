@@ -1,15 +1,13 @@
 """PNG screenshots / raster diagrams / scanned PDFs -> segments.
 
-TWO independent readings of every image, kept side by side:
-  1. OCR  (tesseract, classical, offline, reproducible)    method="ocr"
+Up to TWO independent readings of every image, kept side by side as separate segments:
+  1. OCR  (tesseract, classical, offline, reproducible)    method="ocr"      (optional: needs Tesseract installed)
   2. Vision LLM (Gemini, cached to disk)                    method="vision_llm"
-They are never merged here. Day 2 cross-checks them: where they agree, confidence goes
-up; where they disagree (e.g. OCR read firmware '3.2.1' as 'Ehsnel'), the claim is
-flagged instead of silently trusting either one.
+They are never merged, and no automatic cross-check between them is implemented: when Tesseract is
+unavailable only the vision reading exists, and its reading confidence is a fixed prior (VISION_CONF).
 
-Why not vision-only: models can hallucinate plausible text. Why not OCR-only: OCR
-fails on rotated / low-contrast / dark-theme text (it does, here). Using both is the
-cheapest way to *measure* reading loss instead of guessing at it.
+Why two readings when possible: models can hallucinate plausible text, while OCR fails on rotated /
+low-contrast / dark-theme text (it does, here). Keeping both makes reading loss measurable by hand.
 
 Prompts demand verbatim transcription: identifier variants such as 'P.S.04-A' are
 evidence (they are the alias being tested), so they must NOT be "corrected".
@@ -28,7 +26,7 @@ from ..schema import (SegmentBuilder, Segment, METHOD_OCR, METHOD_VISION)
 from ..sources import SourceInfo
 from ._common import Ctx, clean
 
-VISION_CONF = 0.8       # fixed prior for model readings; refined by OCR cross-check on Day 2
+VISION_CONF = 0.8       # fixed prior for model readings (not calibrated; no OCR cross-check is computed)
 
 _COMMON = (
     "You are transcribing a technical image for a documentation database. "

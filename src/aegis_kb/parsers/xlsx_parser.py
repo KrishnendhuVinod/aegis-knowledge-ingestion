@@ -1,7 +1,7 @@
 """XLSX -> one segment per data row, keyed by header. Deterministic (openpyxl).
 
 Kept deliberately raw: IDs are stored exactly 'as printed' (the component register has
-inconsistent formatting on purpose). Normalisation is a separate, logged step (Day 2),
+inconsistent formatting on purpose). Normalisation is a separate, logged step (entity resolution),
 never a silent change at parse time.
 """
 from __future__ import annotations

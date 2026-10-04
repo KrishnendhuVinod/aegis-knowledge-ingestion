@@ -1,4 +1,4 @@
-"""Day-1 tests: each one pins a property that a later answer depends on."""
+"""Parser tests: each one pins a property that a later answer depends on."""
 import json
 from pathlib import Path
 
