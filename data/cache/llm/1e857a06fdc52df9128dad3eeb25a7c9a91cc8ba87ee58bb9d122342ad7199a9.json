@@ -1,0 +1,56 @@
+{
+  "model": "gemini-3.1-flash-lite",
+  "prompt": "You are transcribing a technical image for a documentation database. Copy every identifier EXACTLY as printed, keeping punctuation, spacing and case (for example 'P.S.04-A' must stay 'P.S.04-A'; never normalise, correct or guess). If something is illegible or you are unsure, put it in 'uncertain' instead of guessing. Return ONLY JSON with these keys (use empty lists/strings when not applicable): {\"title\": str, \"fields\": [{\"label\": str, \"value\": str}], \"tables\": [{\"columns\": [str], \"rows\": [[str]]}], \"nodes\": [str], \"edges\": [{\"from\": str, \"to\": str}], \"text_blocks\": [str], \"uncertain\": [str]}. This is a screenshot of an industrial HMI. Put each label/value pair in 'fields' (label exactly as shown, value exactly as shown, including units). Put free text (notes, footers, banners) in 'text_blocks'. Leave nodes/edges empty.",
+  "response": {
+    "title": "AEGIS SERIES-7 HCS — ALARM LIST",
+    "fields": [],
+    "tables": [
+      {
+        "columns": [
+          "#",
+          "TAG",
+          "DESCRIPTION",
+          "STATE",
+          "TIME"
+        ],
+        "rows": [
+          [
+            "1",
+            "A17",
+            "Hydraulic Pressure Low",
+            "CLEARED",
+            "08:14:02"
+          ],
+          [
+            "2",
+            "A19",
+            "Pressure Sensor Signal Invalid",
+            "CLEARED",
+            "03-11 22:40"
+          ],
+          [
+            "3",
+            "A17",
+            "Hydraulic Pressure Low",
+            "ACTIVE",
+            "08:14:57"
+          ],
+          [
+            "4",
+            "A18",
+            "Hydraulic Pressure High",
+            "INACTIVE",
+            "--"
+          ]
+        ]
+      }
+    ],
+    "nodes": [],
+    "edges": [],
+    "text_blocks": [
+      "SW REV 3.2",
+      "Alarm A17 active for 00:00:14 — Shutdown Procedure 4.7 threshold: 00:00:10"
+    ],
+    "uncertain": []
+  }
+}

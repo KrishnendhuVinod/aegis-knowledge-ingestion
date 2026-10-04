@@ -1,0 +1,77 @@
+{
+  "model": "gemini-3.1-flash-lite",
+  "prompt": "You are transcribing a technical image for a documentation database. Copy every identifier EXACTLY as printed, keeping punctuation, spacing and case (for example 'P.S.04-A' must stay 'P.S.04-A'; never normalise, correct or guess). If something is illegible or you are unsure, put it in 'uncertain' instead of guessing. Return ONLY JSON with these keys (use empty lists/strings when not applicable): {\"title\": str, \"fields\": [{\"label\": str, \"value\": str}], \"tables\": [{\"columns\": [str], \"rows\": [[str]]}], \"nodes\": [str], \"edges\": [{\"from\": str, \"to\": str}], \"text_blocks\": [str], \"uncertain\": [str]}. This is a scanned (skewed, noisy) record. Put header key/value pairs in 'fields', any table in 'tables' (one entry per table, columns + rows verbatim), and notes/paragraphs in 'text_blocks'. Transcribe signature/date lines too, noting if they are blank.",
+  "response": {
+    "title": "APPENDIX C — SENSOR CALIBRATION RECORD",
+    "fields": [
+      {
+        "label": "Aegis Series-7 HCS",
+        "value": "(scanned from field service binder, uncontrolled copy)"
+      },
+      {
+        "label": "Sensor Tag:",
+        "value": "PS-04A"
+      },
+      {
+        "label": "Location:",
+        "value": "HPU discharge line"
+      },
+      {
+        "label": "Calibration Date:",
+        "value": "2026-01-09"
+      },
+      {
+        "label": "Technician:",
+        "value": "R. Okafor"
+      },
+      {
+        "label": "Signature:",
+        "value": ""
+      },
+      {
+        "label": "Date:",
+        "value": ""
+      }
+    ],
+    "tables": [
+      {
+        "columns": [
+          "Point",
+          "Reference",
+          "Reading",
+          "Result"
+        ],
+        "rows": [
+          [
+            "Zero (0%)",
+            "0 bar",
+            "0.1 bar",
+            "PASS"
+          ],
+          [
+            "Mid (50%)",
+            "100 bar",
+            "99.6 bar",
+            "PASS"
+          ],
+          [
+            "Span (100%)",
+            "200 bar",
+            "199.4 bar",
+            "PASS"
+          ]
+        ]
+      }
+    ],
+    "nodes": [],
+    "edges": [],
+    "text_blocks": [
+      "Calibration Points",
+      "Note: this calibration record supersedes the field data sheet used prior to the PS-04 to PS-04A sensor change (see ECN-1042). Span reference target is 200 bar, consistent with the software revision 3.2 operating pressure setpoint.",
+      "Prior sensor (PS-04) span reference target was 180 bar — for historical comparison only. Do not use the 180 bar figure to evaluate PS-04A.",
+      "No calibration interval is specified for PS-04A on this form; recalibration frequency should be confirmed against the applicable maintenance schedule, which is not included in this binder.",
+      "Page 1 of 1 — scanned copy, quality varies"
+    ],
+    "uncertain": []
+  }
+}

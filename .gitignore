@@ -1,0 +1,10 @@
+.env
+__pycache__/
+*.pyc
+.pytest_cache/
+.venv/
+# raw dataset is the assessor's material: keep it out of the repo unless you are told otherwise
+data/raw/*
+!data/raw/.gitkeep
+# NOTE: data/cache/ is deliberately COMMITTED so the pipeline reproduces without an API key
+*.egg-info/

@@ -1,0 +1,1 @@
+"""Aegis knowledge ingestion pipeline."""

@@ -1,0 +1,5849 @@
+{
+ "entities": [
+  {
+   "id": "HPU",
+   "name": "Hydraulic Power Unit",
+   "type": "component",
+   "aliases": [
+    "Hydraulic Unit",
+    "HP unit",
+    "Hydraulic Power Pack",
+    "hydraulic pack"
+   ],
+   "location": "Skid A, Bay 2",
+   "status": "Active",
+   "notes": "Primary hydraulic pressure source for the press circuit.",
+   "registered": true,
+   "evidence": [
+    "component_register::001"
+   ]
+  },
+  {
+   "id": "IV-21",
+   "name": "Isolation Valve 21",
+   "type": "component",
+   "aliases": [
+    "Isolation Valve",
+    "IV21"
+   ],
+   "location": "Hydraulic Module",
+   "status": "Active",
+   "notes": "Must be OPEN prior to HPU startup.",
+   "registered": true,
+   "evidence": [
+    "component_register::002"
+   ]
+  },
+  {
+   "id": "PS-04",
+   "name": "Pressure Sensor 04",
+   "type": "component",
+   "aliases": [
+    "PRESSURE SENSOR 04",
+    "P04",
+    "PS04"
+   ],
+   "location": "HPU discharge line",
+   "status": "Superseded",
+   "notes": "Superseded by PS-04A effective software rev 3.2. See ECN-1042.",
+   "registered": true,
+   "evidence": [
+    "component_register::003"
+   ]
+  },
+  {
+   "id": "PS-04A",
+   "name": "Pressure Sensor 04A",
+   "type": "component",
+   "aliases": [
+    "P04A",
+    "PS04A"
+   ],
+   "location": "HPU discharge line",
+   "status": "Active",
+   "notes": "Installed per ECN-1042. Requires controller firmware >= 3.2.",
+   "registered": true,
+   "evidence": [
+    "component_register::004"
+   ]
+  },
+  {
+   "id": "PS-40",
+   "name": "Pressure Sensor 40",
+   "type": "component",
+   "aliases": [
+    "P40",
+    "PS40"
+   ],
+   "location": "Coolant Loop, Skid B",
+   "status": "Active",
+   "notes": "NOT related to the HPU discharge circuit. Do not confuse with PS-04 / PS-04A.",
+   "registered": true,
+   "evidence": [
+    "component_register::005"
+   ]
+  },
+  {
+   "id": "PLC-03",
+   "name": "HCS Controller",
+   "type": "component",
+   "aliases": [
+    "Controller",
+    "Aegis Controller"
+   ],
+   "location": "Control Cabinet 1",
+   "status": "Active",
+   "notes": "Supervises startup sequencing, alarms, and interlocks.",
+   "registered": true,
+   "evidence": [
+    "component_register::006"
+   ]
+  },
+  {
+   "id": "A17",
+   "name": "Alarm: Hydraulic Pressure Low",
+   "type": "alarm",
+   "aliases": [],
+   "location": "N/A (software alarm)",
+   "status": "Active",
+   "notes": "See Alarm Reference AEG-AL-700 for thresholds and required actions.",
+   "registered": true,
+   "evidence": [
+    "component_register::007"
+   ]
+  },
+  {
+   "id": "A18",
+   "name": "Alarm: Hydraulic Pressure High",
+   "type": "alarm",
+   "aliases": [],
+   "location": "N/A (software alarm)",
+   "status": "Active",
+   "notes": "See Alarm Reference AEG-AL-700.",
+   "registered": true,
+   "evidence": [
+    "component_register::008"
+   ]
+  },
+  {
+   "id": "A19",
+   "name": "Alarm: Pressure Sensor Signal Invalid",
+   "type": "alarm",
+   "aliases": [],
+   "location": "N/A (software alarm)",
+   "status": "Active",
+   "notes": "See Alarm Reference AEG-AL-700.",
+   "registered": true,
+   "evidence": [
+    "component_register::009"
+   ]
+  },
+  {
+   "id": "TB-7",
+   "name": "Terminal Block 7",
+   "type": "component",
+   "aliases": [],
+   "location": "Control Cabinet 1",
+   "status": "Active",
+   "notes": "Wiring reference only, used in AEG-DWG-W03; corresponds to the PS-04A signal loop.",
+   "registered": true,
+   "evidence": [
+    "component_register::010"
+   ]
+  },
+  {
+   "id": "Q1",
+   "name": "Main Disconnect",
+   "type": "component",
+   "aliases": [],
+   "location": "Control Cabinet 1",
+   "status": "Active",
+   "notes": "480V incoming disconnect.",
+   "registered": true,
+   "evidence": [
+    "component_register::011"
+   ]
+  },
+  {
+   "id": "T1",
+   "name": "Control Transformer",
+   "type": "component",
+   "aliases": [],
+   "location": "Control Cabinet 1",
+   "status": "Active",
+   "notes": "480:120V control power.",
+   "registered": true,
+   "evidence": [
+    "component_register::012"
+   ]
+  },
+  {
+   "id": "Main Reservoir",
+   "name": "Main Reservoir",
+   "type": "diagram_part",
+   "aliases": [],
+   "location": null,
+   "status": null,
+   "notes": null,
+   "registered": false,
+   "evidence": []
+  },
+  {
+   "id": "Press Circuit",
+   "name": "Press Circuit",
+   "type": "diagram_part",
+   "aliases": [],
+   "location": null,
+   "status": null,
+   "notes": null,
+   "registered": false,
+   "evidence": []
+  },
+  {
+   "id": "Auxiliary Reservoir",
+   "name": "Auxiliary Reservoir",
+   "type": "diagram_part",
+   "aliases": [],
+   "location": null,
+   "status": null,
+   "notes": null,
+   "registered": false,
+   "evidence": []
+  },
+  {
+   "id": "Connector J-14",
+   "name": "Connector J-14",
+   "type": "diagram_part",
+   "aliases": [],
+   "location": null,
+   "status": null,
+   "notes": null,
+   "registered": false,
+   "evidence": []
+  },
+  {
+   "id": "Connector J-15",
+   "name": "Connector J-15",
+   "type": "diagram_part",
+   "aliases": [],
+   "location": null,
+   "status": null,
+   "notes": null,
+   "registered": false,
+   "evidence": []
+  },
+  {
+   "id": "IV-21 SOLENOID",
+   "name": "IV-21 SOLENOID",
+   "type": "diagram_part",
+   "aliases": [],
+   "location": null,
+   "status": null,
+   "notes": null,
+   "registered": false,
+   "evidence": []
+  },
+  {
+   "id": "PLC-03 24VDC POWER SUPPLY",
+   "name": "PLC-03 24VDC POWER SUPPLY",
+   "type": "diagram_part",
+   "aliases": [],
+   "location": null,
+   "status": null,
+   "notes": null,
+   "registered": false,
+   "evidence": []
+  },
+  {
+   "id": "PLC-03 I/O RACK",
+   "name": "PLC-03 I/O RACK",
+   "type": "diagram_part",
+   "aliases": [],
+   "location": null,
+   "status": null,
+   "notes": null,
+   "registered": false,
+   "evidence": []
+  },
+  {
+   "id": "SENSOR LOOP POWER 24VDC",
+   "name": "SENSOR LOOP POWER 24VDC",
+   "type": "diagram_part",
+   "aliases": [],
+   "location": null,
+   "status": null,
+   "notes": null,
+   "registered": false,
+   "evidence": []
+  },
+  {
+   "id": "E-STOP SAFETY RELAY KA1",
+   "name": "E-STOP SAFETY RELAY KA1",
+   "type": "diagram_part",
+   "aliases": [],
+   "location": null,
+   "status": null,
+   "notes": null,
+   "registered": false,
+   "evidence": []
+  },
+  {
+   "id": "IV-21 VALVE DRIVER",
+   "name": "IV-21 VALVE DRIVER",
+   "type": "diagram_part",
+   "aliases": [],
+   "location": null,
+   "status": null,
+   "notes": null,
+   "registered": false,
+   "evidence": []
+  }
+ ],
+ "decisions": [
+  {
+   "surface": "Hydraulic Unit",
+   "entity_id": "HPU",
+   "relation": "same_as",
+   "decision": "accepted",
+   "reason": "listed under 'Known Aliases' in the component register",
+   "evidence": [
+    "component_register::001"
+   ],
+   "confidence": 1.0
+  },
+  {
+   "surface": "HP unit",
+   "entity_id": "HPU",
+   "relation": "same_as",
+   "decision": "accepted",
+   "reason": "listed under 'Known Aliases' in the component register",
+   "evidence": [
+    "component_register::001"
+   ],
+   "confidence": 1.0
+  },
+  {
+   "surface": "Hydraulic Power Pack",
+   "entity_id": "HPU",
+   "relation": "same_as",
+   "decision": "accepted",
+   "reason": "listed under 'Known Aliases' in the component register",
+   "evidence": [
+    "component_register::001"
+   ],
+   "confidence": 1.0
+  },
+  {
+   "surface": "Isolation Valve",
+   "entity_id": "IV-21",
+   "relation": "same_as",
+   "decision": "accepted",
+   "reason": "listed under 'Known Aliases' in the component register",
+   "evidence": [
+    "component_register::002"
+   ],
+   "confidence": 1.0
+  },
+  {
+   "surface": "IV21",
+   "entity_id": "IV-21",
+   "relation": "same_as",
+   "decision": "accepted",
+   "reason": "listed under 'Known Aliases' in the component register",
+   "evidence": [
+    "component_register::002"
+   ],
+   "confidence": 1.0
+  },
+  {
+   "surface": "PRESSURE SENSOR 04",
+   "entity_id": "PS-04",
+   "relation": "same_as",
+   "decision": "accepted",
+   "reason": "listed under 'Known Aliases' in the component register",
+   "evidence": [
+    "component_register::003"
+   ],
+   "confidence": 1.0
+  },
+  {
+   "surface": "P04",
+   "entity_id": "PS-04",
+   "relation": "same_as",
+   "decision": "accepted",
+   "reason": "listed under 'Known Aliases' in the component register",
+   "evidence": [
+    "component_register::003"
+   ],
+   "confidence": 1.0
+  },
+  {
+   "surface": "PS04",
+   "entity_id": "PS-04",
+   "relation": "same_as",
+   "decision": "accepted",
+   "reason": "listed under 'Known Aliases' in the component register",
+   "evidence": [
+    "component_register::003"
+   ],
+   "confidence": 1.0
+  },
+  {
+   "surface": "P04A",
+   "entity_id": "PS-04A",
+   "relation": "same_as",
+   "decision": "accepted",
+   "reason": "listed under 'Known Aliases' in the component register",
+   "evidence": [
+    "component_register::004"
+   ],
+   "confidence": 1.0
+  },
+  {
+   "surface": "PS04A",
+   "entity_id": "PS-04A",
+   "relation": "same_as",
+   "decision": "accepted",
+   "reason": "listed under 'Known Aliases' in the component register",
+   "evidence": [
+    "component_register::004"
+   ],
+   "confidence": 1.0
+  },
+  {
+   "surface": "P40",
+   "entity_id": "PS-40",
+   "relation": "same_as",
+   "decision": "accepted",
+   "reason": "listed under 'Known Aliases' in the component register",
+   "evidence": [
+    "component_register::005"
+   ],
+   "confidence": 1.0
+  },
+  {
+   "surface": "PS40",
+   "entity_id": "PS-40",
+   "relation": "same_as",
+   "decision": "accepted",
+   "reason": "listed under 'Known Aliases' in the component register",
+   "evidence": [
+    "component_register::005"
+   ],
+   "confidence": 1.0
+  },
+  {
+   "surface": "Controller",
+   "entity_id": "PLC-03",
+   "relation": "same_as",
+   "decision": "accepted",
+   "reason": "listed under 'Known Aliases' in the component register",
+   "evidence": [
+    "component_register::006"
+   ],
+   "confidence": 1.0
+  },
+  {
+   "surface": "Aegis Controller",
+   "entity_id": "PLC-03",
+   "relation": "same_as",
+   "decision": "accepted",
+   "reason": "listed under 'Known Aliases' in the component register",
+   "evidence": [
+    "component_register::006"
+   ],
+   "confidence": 1.0
+  },
+  {
+   "surface": "PS-04",
+   "entity_id": "PS-04A",
+   "relation": "superseded_by",
+   "decision": "accepted",
+   "reason": "register: PS-04 superseded by PS-04A effective software revision 3.2. (ECN-1042)",
+   "evidence": [
+    "component_register::003"
+   ],
+   "confidence": 1.0
+  },
+  {
+   "surface": "PS-04",
+   "entity_id": "PS-04A",
+   "relation": "same_as",
+   "decision": "rejected",
+   "reason": "PS-04 and PS-04A are separate register rows with different status; ECN-1042 calls PS-04A 'not a form-fit-function replacement': related by replacement, not the same component",
+   "evidence": [
+    "component_register::003"
+   ],
+   "confidence": 1.0
+  },
+  {
+   "surface": "PS-40",
+   "entity_id": "PS-04",
+   "relation": "distinct_from",
+   "decision": "accepted",
+   "reason": "register note on PS-40: 'NOT related to the HPU discharge circuit'; located 'Coolant Loop, Skid B' vs 'HPU discharge line'",
+   "evidence": [
+    "component_register::005"
+   ],
+   "confidence": 1.0
+  },
+  {
+   "surface": "PS-40",
+   "entity_id": "PS-04",
+   "relation": "same_as",
+   "decision": "rejected",
+   "reason": "PS-40 (Coolant Loop, Skid B) and PS-04 are explicitly unrelated look-alikes",
+   "evidence": [
+    "component_register::005"
+   ],
+   "confidence": 1.0
+  },
+  {
+   "surface": "PS-40",
+   "entity_id": "PS-04A",
+   "relation": "distinct_from",
+   "decision": "accepted",
+   "reason": "register note on PS-40: 'NOT related to the HPU discharge circuit'; located 'Coolant Loop, Skid B' vs 'HPU discharge line'",
+   "evidence": [
+    "component_register::005"
+   ],
+   "confidence": 1.0
+  },
+  {
+   "surface": "PS-40",
+   "entity_id": "PS-04A",
+   "relation": "same_as",
+   "decision": "rejected",
+   "reason": "PS-40 (Coolant Loop, Skid B) and PS-04A are explicitly unrelated look-alikes",
+   "evidence": [
+    "component_register::005"
+   ],
+   "confidence": 1.0
+  },
+  {
+   "surface": "HP unit",
+   "entity_id": "HPU",
+   "relation": "same_as",
+   "decision": "accepted",
+   "reason": "operator manual states 'All three terms refer to the same physical assembly'",
+   "evidence": [
+    "operator_manual::007"
+   ],
+   "confidence": 1.0
+  },
+  {
+   "surface": "Hydraulic Unit",
+   "entity_id": "HPU",
+   "relation": "same_as",
+   "decision": "accepted",
+   "reason": "operator manual states 'All three terms refer to the same physical assembly'",
+   "evidence": [
+    "operator_manual::007"
+   ],
+   "confidence": 1.0
+  },
+  {
+   "surface": "Hydraulic Power Pack",
+   "entity_id": "HPU",
+   "relation": "same_as",
+   "decision": "accepted",
+   "reason": "maintenance manual writes 'Hydraulic Power Pack (HPU)'",
+   "evidence": [
+    "maintenance_manual::019"
+   ],
+   "confidence": 1.0
+  },
+  {
+   "surface": "Hydraulic Power Pack",
+   "entity_id": "HPU",
+   "relation": "same_as",
+   "decision": "accepted",
+   "reason": "legacy manual writes 'Hydraulic Power Pack (HPU)'",
+   "evidence": [
+    "legacy_manual_v1::008"
+   ],
+   "confidence": 1.0
+  },
+  {
+   "surface": "hydraulic pack",
+   "entity_id": "HPU",
+   "relation": "same_as",
+   "decision": "accepted",
+   "reason": "training slide says techs call the HPU the 'hydraulic pack' - 'same thing' (secondary source, informal)",
+   "evidence": [
+    "training_slides::005"
+   ],
+   "confidence": 0.8
+  },
+  {
+   "surface": "PRESSURE XDCR (field device)",
+   "entity_id": "PS-04A",
+   "relation": "corresponds_to",
+   "decision": "accepted",
+   "reason": "wiring drawing note: the device at J-14 / TB-7 is 'the HPU discharge pressure transducer described elsewhere as PS-04A'; the drawing uses the wiring designation only",
+   "evidence": [
+    "wiring_diagram::003"
+   ],
+   "confidence": 0.95
+  },
+  {
+   "surface": "TB-7 REF: PRESSURE XDCR LOOP",
+   "entity_id": "PS-04A",
+   "relation": "corresponds_to",
+   "decision": "accepted",
+   "reason": "electrical drawing references TB-7 for the pressure transducer loop; register says TB-7 'corresponds to the PS-04A signal loop' (TB-7 itself is a terminal block, a separate entity)",
+   "evidence": [
+    "electrical_diagram::018"
+   ],
+   "confidence": 0.85
+  },
+  {
+   "surface": "P.S.04-A",
+   "entity_id": "PS-04A",
+   "relation": "variant_of",
+   "decision": "accepted",
+   "reason": "tag read from screen_diagnostics: identifier differs from 'PS04A' only in punctuation/spacing/case (normalised both = PS04A); not a prefix match",
+   "evidence": [
+    "screen_diagnostics::002"
+   ],
+   "confidence": 0.7200000000000001
+  },
+  {
+   "surface": "PS-04A",
+   "entity_id": "PS-04A",
+   "relation": "same_as",
+   "decision": "accepted",
+   "reason": "tag read from calibration_scan: exact match (case/spacing-insensitive) to 'PS-04A' in the register",
+   "evidence": [
+    "calibration_scan::003"
+   ],
+   "confidence": 0.8
+  },
+  {
+   "surface": "PLC-03 (HCS Controller)",
+   "entity_id": "PLC-03",
+   "relation": "same_as",
+   "decision": "accepted",
+   "reason": "exact match (case/spacing-insensitive) to 'PLC-03' in the register",
+   "evidence": [],
+   "confidence": 1.0
+  },
+  {
+   "surface": "Hydraulic Power Unit (HPU)",
+   "entity_id": "HPU",
+   "relation": "same_as",
+   "decision": "accepted",
+   "reason": "exact match (case/spacing-insensitive) to 'Hydraulic Power Unit' in the register",
+   "evidence": [],
+   "confidence": 1.0
+  },
+  {
+   "surface": "PLC-03 (HCS Controller)",
+   "entity_id": "PLC-03",
+   "relation": "same_as",
+   "decision": "accepted",
+   "reason": "exact match (case/spacing-insensitive) to 'PLC-03' in the register",
+   "evidence": [],
+   "confidence": 1.0
+  },
+  {
+   "surface": "PS-04A",
+   "entity_id": "PS-04A",
+   "relation": "same_as",
+   "decision": "accepted",
+   "reason": "exact match (case/spacing-insensitive) to 'PS-04A' in the register",
+   "evidence": [],
+   "confidence": 1.0
+  },
+  {
+   "surface": "PLC-03 (HCS Controller)",
+   "entity_id": "PLC-03",
+   "relation": "same_as",
+   "decision": "accepted",
+   "reason": "exact match (case/spacing-insensitive) to 'PLC-03' in the register",
+   "evidence": [],
+   "confidence": 1.0
+  },
+  {
+   "surface": "IV-21",
+   "entity_id": "IV-21",
+   "relation": "same_as",
+   "decision": "accepted",
+   "reason": "exact match (case/spacing-insensitive) to 'IV-21' in the register",
+   "evidence": [],
+   "confidence": 1.0
+  },
+  {
+   "surface": "PS-04A",
+   "entity_id": "PS-04A",
+   "relation": "same_as",
+   "decision": "accepted",
+   "reason": "exact match (case/spacing-insensitive) to 'PS-04A' in the register",
+   "evidence": [],
+   "confidence": 1.0
+  },
+  {
+   "surface": "Hydraulic Power Unit (HPU)",
+   "entity_id": "HPU",
+   "relation": "same_as",
+   "decision": "accepted",
+   "reason": "exact match (case/spacing-insensitive) to 'Hydraulic Power Unit' in the register",
+   "evidence": [],
+   "confidence": 1.0
+  },
+  {
+   "surface": "Hydraulic Power Unit (HPU)",
+   "entity_id": "HPU",
+   "relation": "same_as",
+   "decision": "accepted",
+   "reason": "exact match (case/spacing-insensitive) to 'Hydraulic Power Unit' in the register",
+   "evidence": [],
+   "confidence": 1.0
+  },
+  {
+   "surface": "IV-21",
+   "entity_id": "IV-21",
+   "relation": "same_as",
+   "decision": "accepted",
+   "reason": "exact match (case/spacing-insensitive) to 'IV-21' in the register",
+   "evidence": [],
+   "confidence": 1.0
+  },
+  {
+   "surface": "Hydraulic Power Unit (HPU)",
+   "entity_id": "HPU",
+   "relation": "same_as",
+   "decision": "accepted",
+   "reason": "exact match (case/spacing-insensitive) to 'Hydraulic Power Unit' in the register",
+   "evidence": [],
+   "confidence": 1.0
+  },
+  {
+   "surface": "Main Reservoir",
+   "entity_id": "Main Reservoir",
+   "relation": "unregistered",
+   "decision": "accepted",
+   "reason": "no register entity matches; kept as an unregistered, drawing-only part",
+   "evidence": [],
+   "confidence": 1.0
+  },
+  {
+   "surface": "Main Reservoir",
+   "entity_id": "Main Reservoir",
+   "relation": "same_as",
+   "decision": "accepted",
+   "reason": "exact match (case/spacing-insensitive) to 'Main Reservoir' in the register",
+   "evidence": [],
+   "confidence": 1.0
+  },
+  {
+   "surface": "Press Circuit",
+   "entity_id": "Press Circuit",
+   "relation": "unregistered",
+   "decision": "accepted",
+   "reason": "no register entity matches; kept as an unregistered, drawing-only part",
+   "evidence": [],
+   "confidence": 1.0
+  },
+  {
+   "surface": "IV-21",
+   "entity_id": "IV-21",
+   "relation": "same_as",
+   "decision": "accepted",
+   "reason": "exact match (case/spacing-insensitive) to 'IV-21' in the register",
+   "evidence": [],
+   "confidence": 1.0
+  },
+  {
+   "surface": "Press Circuit",
+   "entity_id": "Press Circuit",
+   "relation": "same_as",
+   "decision": "accepted",
+   "reason": "exact match (case/spacing-insensitive) to 'Press Circuit' in the register",
+   "evidence": [],
+   "confidence": 1.0
+  },
+  {
+   "surface": "Main Reservoir",
+   "entity_id": "Main Reservoir",
+   "relation": "same_as",
+   "decision": "accepted",
+   "reason": "exact match (case/spacing-insensitive) to 'Main Reservoir' in the register",
+   "evidence": [],
+   "confidence": 1.0
+  },
+  {
+   "surface": "Auxiliary Reservoir",
+   "entity_id": "Auxiliary Reservoir",
+   "relation": "unregistered",
+   "decision": "accepted",
+   "reason": "no register entity matches; kept as an unregistered, drawing-only part",
+   "evidence": [],
+   "confidence": 1.0
+  },
+  {
+   "surface": "PLC-03",
+   "entity_id": "PLC-03",
+   "relation": "same_as",
+   "decision": "accepted",
+   "reason": "exact match (case/spacing-insensitive) to 'PLC-03' in the register",
+   "evidence": [],
+   "confidence": 1.0
+  },
+  {
+   "surface": "Terminal Block TB-7",
+   "entity_id": "TB-7",
+   "relation": "variant_of",
+   "decision": "accepted",
+   "reason": "label = ID TB-7 + the register name words ['BLOCK', 'TERMINAL'] (abbreviations expanded)",
+   "evidence": [],
+   "confidence": 0.8
+  },
+  {
+   "surface": "Terminal Block TB-7",
+   "entity_id": "TB-7",
+   "relation": "variant_of",
+   "decision": "accepted",
+   "reason": "label = ID TB-7 + the register name words ['BLOCK', 'TERMINAL'] (abbreviations expanded)",
+   "evidence": [],
+   "confidence": 0.8
+  },
+  {
+   "surface": "Connector J-14",
+   "entity_id": "Connector J-14",
+   "relation": "unregistered",
+   "decision": "accepted",
+   "reason": "no register entity matches; kept as an unregistered, drawing-only part",
+   "evidence": [],
+   "confidence": 1.0
+  },
+  {
+   "surface": "Terminal Block TB-7",
+   "entity_id": "TB-7",
+   "relation": "variant_of",
+   "decision": "accepted",
+   "reason": "label = ID TB-7 + the register name words ['BLOCK', 'TERMINAL'] (abbreviations expanded)",
+   "evidence": [],
+   "confidence": 0.8
+  },
+  {
+   "surface": "Connector J-15",
+   "entity_id": "Connector J-15",
+   "relation": "unregistered",
+   "decision": "accepted",
+   "reason": "no register entity matches; kept as an unregistered, drawing-only part",
+   "evidence": [],
+   "confidence": 1.0
+  },
+  {
+   "surface": "Connector J-14",
+   "entity_id": "Connector J-14",
+   "relation": "same_as",
+   "decision": "accepted",
+   "reason": "exact match (case/spacing-insensitive) to 'Connector J-14' in the register",
+   "evidence": [],
+   "confidence": 1.0
+  },
+  {
+   "surface": "Connector J-15",
+   "entity_id": "Connector J-15",
+   "relation": "same_as",
+   "decision": "accepted",
+   "reason": "exact match (case/spacing-insensitive) to 'Connector J-15' in the register",
+   "evidence": [],
+   "confidence": 1.0
+  },
+  {
+   "surface": "IV-21 SOLENOID",
+   "entity_id": "IV-21",
+   "relation": "related_not_same",
+   "decision": "rejected",
+   "reason": "label contains 'IV-21' but adds 'SOLENOID', which is not the register name of IV-21 ('Isolation Valve 21'): a different part, not merged",
+   "evidence": [],
+   "confidence": 0.8
+  },
+  {
+   "surface": "MAIN DISCONNECT Q1",
+   "entity_id": "Q1",
+   "relation": "variant_of",
+   "decision": "accepted",
+   "reason": "label = ID Q1 + the register name words ['DISCONNECT', 'MAIN'] (abbreviations expanded)",
+   "evidence": [],
+   "confidence": 0.8
+  },
+  {
+   "surface": "CONTROL XFMR T1 480:120V",
+   "entity_id": "T1",
+   "relation": "variant_of",
+   "decision": "accepted",
+   "reason": "label = ID T1 + the register name words ['CONTROL', 'TRANSFORMER'] (abbreviations expanded)",
+   "evidence": [],
+   "confidence": 0.8
+  },
+  {
+   "surface": "CONTROL XFMR T1 480:120V",
+   "entity_id": "T1",
+   "relation": "variant_of",
+   "decision": "accepted",
+   "reason": "label = ID T1 + the register name words ['CONTROL', 'TRANSFORMER'] (abbreviations expanded)",
+   "evidence": [],
+   "confidence": 0.8
+  },
+  {
+   "surface": "PLC-03 24VDC POWER SUPPLY",
+   "entity_id": "PLC-03",
+   "relation": "related_not_same",
+   "decision": "rejected",
+   "reason": "label contains 'PLC-03' but adds 'POWER SUPPLY', which is not the register name of PLC-03 ('HCS Controller'): a different part, not merged",
+   "evidence": [],
+   "confidence": 0.8
+  },
+  {
+   "surface": "CONTROL XFMR T1 480:120V",
+   "entity_id": "T1",
+   "relation": "variant_of",
+   "decision": "accepted",
+   "reason": "label = ID T1 + the register name words ['CONTROL', 'TRANSFORMER'] (abbreviations expanded)",
+   "evidence": [],
+   "confidence": 0.8
+  },
+  {
+   "surface": "PLC-03 I/O RACK",
+   "entity_id": "PLC-03",
+   "relation": "related_not_same",
+   "decision": "rejected",
+   "reason": "label contains 'PLC-03' but adds 'I O RACK', which is not the register name of PLC-03 ('HCS Controller'): a different part, not merged",
+   "evidence": [],
+   "confidence": 0.8
+  },
+  {
+   "surface": "PLC-03 24VDC POWER SUPPLY",
+   "entity_id": "PLC-03 24VDC POWER SUPPLY",
+   "relation": "same_as",
+   "decision": "accepted",
+   "reason": "exact match (case/spacing-insensitive) to 'PLC-03 24VDC POWER SUPPLY' in the register",
+   "evidence": [],
+   "confidence": 1.0
+  },
+  {
+   "surface": "PLC-03 I/O RACK",
+   "entity_id": "PLC-03 I/O RACK",
+   "relation": "same_as",
+   "decision": "accepted",
+   "reason": "exact match (case/spacing-insensitive) to 'PLC-03 I/O RACK' in the register",
+   "evidence": [],
+   "confidence": 1.0
+  },
+  {
+   "surface": "PLC-03 24VDC POWER SUPPLY",
+   "entity_id": "PLC-03 24VDC POWER SUPPLY",
+   "relation": "same_as",
+   "decision": "accepted",
+   "reason": "exact match (case/spacing-insensitive) to 'PLC-03 24VDC POWER SUPPLY' in the register",
+   "evidence": [],
+   "confidence": 1.0
+  },
+  {
+   "surface": "SENSOR LOOP POWER 24VDC",
+   "entity_id": "SENSOR LOOP POWER 24VDC",
+   "relation": "unregistered",
+   "decision": "accepted",
+   "reason": "no register entity matches; kept as an unregistered, drawing-only part",
+   "evidence": [],
+   "confidence": 1.0
+  },
+  {
+   "surface": "PLC-03 I/O RACK",
+   "entity_id": "PLC-03 I/O RACK",
+   "relation": "same_as",
+   "decision": "accepted",
+   "reason": "exact match (case/spacing-insensitive) to 'PLC-03 I/O RACK' in the register",
+   "evidence": [],
+   "confidence": 1.0
+  },
+  {
+   "surface": "E-STOP SAFETY RELAY KA1",
+   "entity_id": "E-STOP SAFETY RELAY KA1",
+   "relation": "unregistered",
+   "decision": "accepted",
+   "reason": "no register entity matches; kept as an unregistered, drawing-only part",
+   "evidence": [],
+   "confidence": 1.0
+  },
+  {
+   "surface": "PLC-03 I/O RACK",
+   "entity_id": "PLC-03 I/O RACK",
+   "relation": "same_as",
+   "decision": "accepted",
+   "reason": "exact match (case/spacing-insensitive) to 'PLC-03 I/O RACK' in the register",
+   "evidence": [],
+   "confidence": 1.0
+  },
+  {
+   "surface": "IV-21 VALVE DRIVER",
+   "entity_id": "IV-21",
+   "relation": "related_not_same",
+   "decision": "rejected",
+   "reason": "label contains 'IV-21' but adds 'DRIVER VALVE', which is not the register name of IV-21 ('Isolation Valve 21'): a different part, not merged",
+   "evidence": [],
+   "confidence": 0.8
+  }
+ ],
+ "claims": [
+  {
+   "id": "C001",
+   "subject": "HPU",
+   "predicate": "common_name",
+   "value": "Hydraulic Power Unit",
+   "unit": null,
+   "applies_when": {
+    "known": false,
+    "sw_min": null,
+    "sw_max_exclusive": null
+   },
+   "evidence": [
+    "component_register::001"
+   ],
+   "docs": [
+    "component_register"
+   ],
+   "trust_rank": 1,
+   "status": "asserted",
+   "note": null,
+   "reading_confidence": 1.0,
+   "extraction": "table"
+  },
+  {
+   "id": "C002",
+   "subject": "HPU",
+   "predicate": "location",
+   "value": "Skid A, Bay 2",
+   "unit": null,
+   "applies_when": {
+    "known": true,
+    "sw_min": null,
+    "sw_max_exclusive": null
+   },
+   "evidence": [
+    "component_register::001"
+   ],
+   "docs": [
+    "component_register"
+   ],
+   "trust_rank": 1,
+   "status": "asserted",
+   "note": null,
+   "reading_confidence": 1.0,
+   "extraction": "table"
+  },
+  {
+   "id": "C003",
+   "subject": "HPU",
+   "predicate": "register_status",
+   "value": "Active",
+   "unit": null,
+   "applies_when": {
+    "known": false,
+    "sw_min": null,
+    "sw_max_exclusive": null
+   },
+   "evidence": [
+    "component_register::001"
+   ],
+   "docs": [
+    "component_register"
+   ],
+   "trust_rank": 1,
+   "status": "asserted",
+   "note": "Primary hydraulic pressure source for the press circuit.",
+   "reading_confidence": 1.0,
+   "extraction": "table"
+  },
+  {
+   "id": "C004",
+   "subject": "IV-21",
+   "predicate": "common_name",
+   "value": "Isolation Valve 21",
+   "unit": null,
+   "applies_when": {
+    "known": false,
+    "sw_min": null,
+    "sw_max_exclusive": null
+   },
+   "evidence": [
+    "component_register::002"
+   ],
+   "docs": [
+    "component_register"
+   ],
+   "trust_rank": 1,
+   "status": "asserted",
+   "note": null,
+   "reading_confidence": 1.0,
+   "extraction": "table"
+  },
+  {
+   "id": "C005",
+   "subject": "IV-21",
+   "predicate": "location",
+   "value": "Hydraulic Module",
+   "unit": null,
+   "applies_when": {
+    "known": true,
+    "sw_min": null,
+    "sw_max_exclusive": null
+   },
+   "evidence": [
+    "component_register::002"
+   ],
+   "docs": [
+    "component_register"
+   ],
+   "trust_rank": 1,
+   "status": "asserted",
+   "note": null,
+   "reading_confidence": 1.0,
+   "extraction": "table"
+  },
+  {
+   "id": "C006",
+   "subject": "IV-21",
+   "predicate": "register_status",
+   "value": "Active",
+   "unit": null,
+   "applies_when": {
+    "known": false,
+    "sw_min": null,
+    "sw_max_exclusive": null
+   },
+   "evidence": [
+    "component_register::002"
+   ],
+   "docs": [
+    "component_register"
+   ],
+   "trust_rank": 1,
+   "status": "asserted",
+   "note": "Must be OPEN prior to HPU startup.",
+   "reading_confidence": 1.0,
+   "extraction": "table"
+  },
+  {
+   "id": "C007",
+   "subject": "PS-04",
+   "predicate": "common_name",
+   "value": "Pressure Sensor 04",
+   "unit": null,
+   "applies_when": {
+    "known": false,
+    "sw_min": null,
+    "sw_max_exclusive": null
+   },
+   "evidence": [
+    "component_register::003"
+   ],
+   "docs": [
+    "component_register"
+   ],
+   "trust_rank": 1,
+   "status": "asserted",
+   "note": null,
+   "reading_confidence": 1.0,
+   "extraction": "table"
+  },
+  {
+   "id": "C008",
+   "subject": "PS-04",
+   "predicate": "location",
+   "value": "HPU discharge line",
+   "unit": null,
+   "applies_when": {
+    "known": true,
+    "sw_min": null,
+    "sw_max_exclusive": null
+   },
+   "evidence": [
+    "component_register::003"
+   ],
+   "docs": [
+    "component_register"
+   ],
+   "trust_rank": 1,
+   "status": "asserted",
+   "note": null,
+   "reading_confidence": 1.0,
+   "extraction": "table"
+  },
+  {
+   "id": "C009",
+   "subject": "PS-04",
+   "predicate": "register_status",
+   "value": "Superseded",
+   "unit": null,
+   "applies_when": {
+    "known": false,
+    "sw_min": null,
+    "sw_max_exclusive": null
+   },
+   "evidence": [
+    "component_register::003"
+   ],
+   "docs": [
+    "component_register"
+   ],
+   "trust_rank": 1,
+   "status": "asserted",
+   "note": "Superseded by PS-04A effective software rev 3.2. See ECN-1042.",
+   "reading_confidence": 1.0,
+   "extraction": "table"
+  },
+  {
+   "id": "C010",
+   "subject": "PS-04A",
+   "predicate": "common_name",
+   "value": "Pressure Sensor 04A",
+   "unit": null,
+   "applies_when": {
+    "known": false,
+    "sw_min": null,
+    "sw_max_exclusive": null
+   },
+   "evidence": [
+    "component_register::004"
+   ],
+   "docs": [
+    "component_register"
+   ],
+   "trust_rank": 1,
+   "status": "asserted",
+   "note": null,
+   "reading_confidence": 1.0,
+   "extraction": "table"
+  },
+  {
+   "id": "C011",
+   "subject": "PS-04A",
+   "predicate": "location",
+   "value": "HPU discharge line",
+   "unit": null,
+   "applies_when": {
+    "known": true,
+    "sw_min": null,
+    "sw_max_exclusive": null
+   },
+   "evidence": [
+    "component_register::004"
+   ],
+   "docs": [
+    "component_register"
+   ],
+   "trust_rank": 1,
+   "status": "asserted",
+   "note": null,
+   "reading_confidence": 1.0,
+   "extraction": "table"
+  },
+  {
+   "id": "C012",
+   "subject": "PS-04A",
+   "predicate": "register_status",
+   "value": "Active",
+   "unit": null,
+   "applies_when": {
+    "known": false,
+    "sw_min": null,
+    "sw_max_exclusive": null
+   },
+   "evidence": [
+    "component_register::004"
+   ],
+   "docs": [
+    "component_register"
+   ],
+   "trust_rank": 1,
+   "status": "asserted",
+   "note": "Installed per ECN-1042. Requires controller firmware >= 3.2.",
+   "reading_confidence": 1.0,
+   "extraction": "table"
+  },
+  {
+   "id": "C013",
+   "subject": "PS-04A",
+   "predicate": "firmware_requirement",
+   "value": ">= 3.2.",
+   "unit": null,
+   "applies_when": {
+    "known": true,
+    "sw_min": null,
+    "sw_max_exclusive": null
+   },
+   "evidence": [
+    "component_register::004"
+   ],
+   "docs": [
+    "component_register"
+   ],
+   "trust_rank": 1,
+   "status": "asserted",
+   "note": null,
+   "reading_confidence": 1.0,
+   "extraction": "rule"
+  },
+  {
+   "id": "C014",
+   "subject": "PS-40",
+   "predicate": "common_name",
+   "value": "Pressure Sensor 40",
+   "unit": null,
+   "applies_when": {
+    "known": false,
+    "sw_min": null,
+    "sw_max_exclusive": null
+   },
+   "evidence": [
+    "component_register::005"
+   ],
+   "docs": [
+    "component_register"
+   ],
+   "trust_rank": 1,
+   "status": "asserted",
+   "note": null,
+   "reading_confidence": 1.0,
+   "extraction": "table"
+  },
+  {
+   "id": "C015",
+   "subject": "PS-40",
+   "predicate": "location",
+   "value": "Coolant Loop, Skid B",
+   "unit": null,
+   "applies_when": {
+    "known": true,
+    "sw_min": null,
+    "sw_max_exclusive": null
+   },
+   "evidence": [
+    "component_register::005"
+   ],
+   "docs": [
+    "component_register"
+   ],
+   "trust_rank": 1,
+   "status": "asserted",
+   "note": null,
+   "reading_confidence": 1.0,
+   "extraction": "table"
+  },
+  {
+   "id": "C016",
+   "subject": "PS-40",
+   "predicate": "register_status",
+   "value": "Active",
+   "unit": null,
+   "applies_when": {
+    "known": false,
+    "sw_min": null,
+    "sw_max_exclusive": null
+   },
+   "evidence": [
+    "component_register::005"
+   ],
+   "docs": [
+    "component_register"
+   ],
+   "trust_rank": 1,
+   "status": "asserted",
+   "note": "NOT related to the HPU discharge circuit. Do not confuse with PS-04 / PS-04A.",
+   "reading_confidence": 1.0,
+   "extraction": "table"
+  },
+  {
+   "id": "C017",
+   "subject": "PLC-03",
+   "predicate": "common_name",
+   "value": "HCS Controller",
+   "unit": null,
+   "applies_when": {
+    "known": false,
+    "sw_min": null,
+    "sw_max_exclusive": null
+   },
+   "evidence": [
+    "component_register::006"
+   ],
+   "docs": [
+    "component_register"
+   ],
+   "trust_rank": 1,
+   "status": "asserted",
+   "note": null,
+   "reading_confidence": 1.0,
+   "extraction": "table"
+  },
+  {
+   "id": "C018",
+   "subject": "PLC-03",
+   "predicate": "location",
+   "value": "Control Cabinet 1",
+   "unit": null,
+   "applies_when": {
+    "known": true,
+    "sw_min": null,
+    "sw_max_exclusive": null
+   },
+   "evidence": [
+    "component_register::006"
+   ],
+   "docs": [
+    "component_register"
+   ],
+   "trust_rank": 1,
+   "status": "asserted",
+   "note": null,
+   "reading_confidence": 1.0,
+   "extraction": "table"
+  },
+  {
+   "id": "C019",
+   "subject": "PLC-03",
+   "predicate": "register_status",
+   "value": "Active",
+   "unit": null,
+   "applies_when": {
+    "known": false,
+    "sw_min": null,
+    "sw_max_exclusive": null
+   },
+   "evidence": [
+    "component_register::006"
+   ],
+   "docs": [
+    "component_register"
+   ],
+   "trust_rank": 1,
+   "status": "asserted",
+   "note": "Supervises startup sequencing, alarms, and interlocks.",
+   "reading_confidence": 1.0,
+   "extraction": "table"
+  },
+  {
+   "id": "C020",
+   "subject": "A17",
+   "predicate": "common_name",
+   "value": "Alarm: Hydraulic Pressure Low",
+   "unit": null,
+   "applies_when": {
+    "known": false,
+    "sw_min": null,
+    "sw_max_exclusive": null
+   },
+   "evidence": [
+    "component_register::007"
+   ],
+   "docs": [
+    "component_register"
+   ],
+   "trust_rank": 1,
+   "status": "asserted",
+   "note": null,
+   "reading_confidence": 1.0,
+   "extraction": "table"
+  },
+  {
+   "id": "C021",
+   "subject": "A17",
+   "predicate": "location",
+   "value": "N/A (software alarm)",
+   "unit": null,
+   "applies_when": {
+    "known": true,
+    "sw_min": null,
+    "sw_max_exclusive": null
+   },
+   "evidence": [
+    "component_register::007"
+   ],
+   "docs": [
+    "component_register"
+   ],
+   "trust_rank": 1,
+   "status": "asserted",
+   "note": null,
+   "reading_confidence": 1.0,
+   "extraction": "table"
+  },
+  {
+   "id": "C022",
+   "subject": "A17",
+   "predicate": "register_status",
+   "value": "Active",
+   "unit": null,
+   "applies_when": {
+    "known": false,
+    "sw_min": null,
+    "sw_max_exclusive": null
+   },
+   "evidence": [
+    "component_register::007"
+   ],
+   "docs": [
+    "component_register"
+   ],
+   "trust_rank": 1,
+   "status": "asserted",
+   "note": "See Alarm Reference AEG-AL-700 for thresholds and required actions.",
+   "reading_confidence": 1.0,
+   "extraction": "table"
+  },
+  {
+   "id": "C023",
+   "subject": "A18",
+   "predicate": "common_name",
+   "value": "Alarm: Hydraulic Pressure High",
+   "unit": null,
+   "applies_when": {
+    "known": false,
+    "sw_min": null,
+    "sw_max_exclusive": null
+   },
+   "evidence": [
+    "component_register::008"
+   ],
+   "docs": [
+    "component_register"
+   ],
+   "trust_rank": 1,
+   "status": "asserted",
+   "note": null,
+   "reading_confidence": 1.0,
+   "extraction": "table"
+  },
+  {
+   "id": "C024",
+   "subject": "A18",
+   "predicate": "location",
+   "value": "N/A (software alarm)",
+   "unit": null,
+   "applies_when": {
+    "known": true,
+    "sw_min": null,
+    "sw_max_exclusive": null
+   },
+   "evidence": [
+    "component_register::008"
+   ],
+   "docs": [
+    "component_register"
+   ],
+   "trust_rank": 1,
+   "status": "asserted",
+   "note": null,
+   "reading_confidence": 1.0,
+   "extraction": "table"
+  },
+  {
+   "id": "C025",
+   "subject": "A18",
+   "predicate": "register_status",
+   "value": "Active",
+   "unit": null,
+   "applies_when": {
+    "known": false,
+    "sw_min": null,
+    "sw_max_exclusive": null
+   },
+   "evidence": [
+    "component_register::008"
+   ],
+   "docs": [
+    "component_register"
+   ],
+   "trust_rank": 1,
+   "status": "asserted",
+   "note": "See Alarm Reference AEG-AL-700.",
+   "reading_confidence": 1.0,
+   "extraction": "table"
+  },
+  {
+   "id": "C026",
+   "subject": "A19",
+   "predicate": "common_name",
+   "value": "Alarm: Pressure Sensor Signal Invalid",
+   "unit": null,
+   "applies_when": {
+    "known": false,
+    "sw_min": null,
+    "sw_max_exclusive": null
+   },
+   "evidence": [
+    "component_register::009"
+   ],
+   "docs": [
+    "component_register"
+   ],
+   "trust_rank": 1,
+   "status": "asserted",
+   "note": null,
+   "reading_confidence": 1.0,
+   "extraction": "table"
+  },
+  {
+   "id": "C027",
+   "subject": "A19",
+   "predicate": "location",
+   "value": "N/A (software alarm)",
+   "unit": null,
+   "applies_when": {
+    "known": true,
+    "sw_min": null,
+    "sw_max_exclusive": null
+   },
+   "evidence": [
+    "component_register::009"
+   ],
+   "docs": [
+    "component_register"
+   ],
+   "trust_rank": 1,
+   "status": "asserted",
+   "note": null,
+   "reading_confidence": 1.0,
+   "extraction": "table"
+  },
+  {
+   "id": "C028",
+   "subject": "A19",
+   "predicate": "register_status",
+   "value": "Active",
+   "unit": null,
+   "applies_when": {
+    "known": false,
+    "sw_min": null,
+    "sw_max_exclusive": null
+   },
+   "evidence": [
+    "component_register::009"
+   ],
+   "docs": [
+    "component_register"
+   ],
+   "trust_rank": 1,
+   "status": "asserted",
+   "note": "See Alarm Reference AEG-AL-700.",
+   "reading_confidence": 1.0,
+   "extraction": "table"
+  },
+  {
+   "id": "C029",
+   "subject": "TB-7",
+   "predicate": "common_name",
+   "value": "Terminal Block 7",
+   "unit": null,
+   "applies_when": {
+    "known": false,
+    "sw_min": null,
+    "sw_max_exclusive": null
+   },
+   "evidence": [
+    "component_register::010"
+   ],
+   "docs": [
+    "component_register"
+   ],
+   "trust_rank": 1,
+   "status": "asserted",
+   "note": null,
+   "reading_confidence": 1.0,
+   "extraction": "table"
+  },
+  {
+   "id": "C030",
+   "subject": "TB-7",
+   "predicate": "location",
+   "value": "Control Cabinet 1",
+   "unit": null,
+   "applies_when": {
+    "known": true,
+    "sw_min": null,
+    "sw_max_exclusive": null
+   },
+   "evidence": [
+    "component_register::010"
+   ],
+   "docs": [
+    "component_register"
+   ],
+   "trust_rank": 1,
+   "status": "asserted",
+   "note": null,
+   "reading_confidence": 1.0,
+   "extraction": "table"
+  },
+  {
+   "id": "C031",
+   "subject": "TB-7",
+   "predicate": "register_status",
+   "value": "Active",
+   "unit": null,
+   "applies_when": {
+    "known": false,
+    "sw_min": null,
+    "sw_max_exclusive": null
+   },
+   "evidence": [
+    "component_register::010"
+   ],
+   "docs": [
+    "component_register"
+   ],
+   "trust_rank": 1,
+   "status": "asserted",
+   "note": "Wiring reference only, used in AEG-DWG-W03; corresponds to the PS-04A signal loop.",
+   "reading_confidence": 1.0,
+   "extraction": "table"
+  },
+  {
+   "id": "C032",
+   "subject": "Q1",
+   "predicate": "common_name",
+   "value": "Main Disconnect",
+   "unit": null,
+   "applies_when": {
+    "known": false,
+    "sw_min": null,
+    "sw_max_exclusive": null
+   },
+   "evidence": [
+    "component_register::011"
+   ],
+   "docs": [
+    "component_register"
+   ],
+   "trust_rank": 1,
+   "status": "asserted",
+   "note": null,
+   "reading_confidence": 1.0,
+   "extraction": "table"
+  },
+  {
+   "id": "C033",
+   "subject": "Q1",
+   "predicate": "location",
+   "value": "Control Cabinet 1",
+   "unit": null,
+   "applies_when": {
+    "known": true,
+    "sw_min": null,
+    "sw_max_exclusive": null
+   },
+   "evidence": [
+    "component_register::011"
+   ],
+   "docs": [
+    "component_register"
+   ],
+   "trust_rank": 1,
+   "status": "asserted",
+   "note": null,
+   "reading_confidence": 1.0,
+   "extraction": "table"
+  },
+  {
+   "id": "C034",
+   "subject": "Q1",
+   "predicate": "register_status",
+   "value": "Active",
+   "unit": null,
+   "applies_when": {
+    "known": false,
+    "sw_min": null,
+    "sw_max_exclusive": null
+   },
+   "evidence": [
+    "component_register::011"
+   ],
+   "docs": [
+    "component_register"
+   ],
+   "trust_rank": 1,
+   "status": "asserted",
+   "note": "480V incoming disconnect.",
+   "reading_confidence": 1.0,
+   "extraction": "table"
+  },
+  {
+   "id": "C035",
+   "subject": "Q1",
+   "predicate": "rated_voltage",
+   "value": {
+    "volts": 480,
+    "role": "incoming supply"
+   },
+   "unit": "V",
+   "applies_when": {
+    "known": false,
+    "sw_min": null,
+    "sw_max_exclusive": null
+   },
+   "evidence": [
+    "component_register::011"
+   ],
+   "docs": [
+    "component_register"
+   ],
+   "trust_rank": 1,
+   "status": "asserted",
+   "note": null,
+   "reading_confidence": 1.0,
+   "extraction": "table"
+  },
+  {
+   "id": "C036",
+   "subject": "T1",
+   "predicate": "common_name",
+   "value": "Control Transformer",
+   "unit": null,
+   "applies_when": {
+    "known": false,
+    "sw_min": null,
+    "sw_max_exclusive": null
+   },
+   "evidence": [
+    "component_register::012"
+   ],
+   "docs": [
+    "component_register"
+   ],
+   "trust_rank": 1,
+   "status": "asserted",
+   "note": null,
+   "reading_confidence": 1.0,
+   "extraction": "table"
+  },
+  {
+   "id": "C037",
+   "subject": "T1",
+   "predicate": "location",
+   "value": "Control Cabinet 1",
+   "unit": null,
+   "applies_when": {
+    "known": true,
+    "sw_min": null,
+    "sw_max_exclusive": null
+   },
+   "evidence": [
+    "component_register::012"
+   ],
+   "docs": [
+    "component_register"
+   ],
+   "trust_rank": 1,
+   "status": "asserted",
+   "note": null,
+   "reading_confidence": 1.0,
+   "extraction": "table"
+  },
+  {
+   "id": "C038",
+   "subject": "T1",
+   "predicate": "register_status",
+   "value": "Active",
+   "unit": null,
+   "applies_when": {
+    "known": false,
+    "sw_min": null,
+    "sw_max_exclusive": null
+   },
+   "evidence": [
+    "component_register::012"
+   ],
+   "docs": [
+    "component_register"
+   ],
+   "trust_rank": 1,
+   "status": "asserted",
+   "note": "480:120V control power.",
+   "reading_confidence": 1.0,
+   "extraction": "table"
+  },
+  {
+   "id": "C039",
+   "subject": "T1",
+   "predicate": "rated_voltage",
+   "value": {
+    "primary_v": 480,
+    "secondary_v": 120
+   },
+   "unit": "V",
+   "applies_when": {
+    "known": false,
+    "sw_min": null,
+    "sw_max_exclusive": null
+   },
+   "evidence": [
+    "component_register::012"
+   ],
+   "docs": [
+    "component_register"
+   ],
+   "trust_rank": 1,
+   "status": "asserted",
+   "note": null,
+   "reading_confidence": 1.0,
+   "extraction": "table"
+  },
+  {
+   "id": "C040",
+   "subject": "software:3.0",
+   "predicate": "release_date",
+   "value": "2023-06-02",
+   "unit": null,
+   "applies_when": {
+    "known": false,
+    "sw_min": null,
+    "sw_max_exclusive": null
+   },
+   "evidence": [
+    "revision_history::001"
+   ],
+   "docs": [
+    "revision_history"
+   ],
+   "trust_rank": 1,
+   "status": "asserted",
+   "note": null,
+   "reading_confidence": 1.0,
+   "extraction": "table"
+  },
+  {
+   "id": "C041",
+   "subject": "software:3.0",
+   "predicate": "summary_of_changes",
+   "value": "Initial Series-7 release.",
+   "unit": null,
+   "applies_when": {
+    "known": false,
+    "sw_min": null,
+    "sw_max_exclusive": null
+   },
+   "evidence": [
+    "revision_history::001"
+   ],
+   "docs": [
+    "revision_history"
+   ],
+   "trust_rank": 1,
+   "status": "asserted",
+   "note": null,
+   "reading_confidence": 1.0,
+   "extraction": "table"
+  },
+  {
+   "id": "C042",
+   "subject": "software:3.1",
+   "predicate": "release_date",
+   "value": "2024-02-14",
+   "unit": null,
+   "applies_when": {
+    "known": false,
+    "sw_min": null,
+    "sw_max_exclusive": null
+   },
+   "evidence": [
+    "revision_history::002"
+   ],
+   "docs": [
+    "revision_history"
+   ],
+   "trust_rank": 1,
+   "status": "asserted",
+   "note": null,
+   "reading_confidence": 1.0,
+   "extraction": "table"
+  },
+  {
+   "id": "C043",
+   "subject": "software:3.1",
+   "predicate": "summary_of_changes",
+   "value": "Minor HMI diagnostics screen updates. No change to sensors or setpoints.",
+   "unit": null,
+   "applies_when": {
+    "known": false,
+    "sw_min": null,
+    "sw_max_exclusive": null
+   },
+   "evidence": [
+    "revision_history::002"
+   ],
+   "docs": [
+    "revision_history"
+   ],
+   "trust_rank": 1,
+   "status": "asserted",
+   "note": null,
+   "reading_confidence": 1.0,
+   "extraction": "table"
+  },
+  {
+   "id": "C044",
+   "subject": "software:3.2",
+   "predicate": "release_date",
+   "value": "2025-09-30",
+   "unit": null,
+   "applies_when": {
+    "known": false,
+    "sw_min": null,
+    "sw_max_exclusive": null
+   },
+   "evidence": [
+    "revision_history::003"
+   ],
+   "docs": [
+    "revision_history"
+   ],
+   "trust_rank": 1,
+   "status": "asserted",
+   "note": null,
+   "reading_confidence": 1.0,
+   "extraction": "table"
+  },
+  {
+   "id": "C045",
+   "subject": "software:3.2",
+   "predicate": "summary_of_changes",
+   "value": "Pressure sensor PS-04 replaced by PS-04A. Normal HPU discharge pressure setpoint changed from 180 bar to 200 bar. See ECN-1042.",
+   "unit": null,
+   "applies_when": {
+    "known": false,
+    "sw_min": null,
+    "sw_max_exclusive": null
+   },
+   "evidence": [
+    "revision_history::003"
+   ],
+   "docs": [
+    "revision_history"
+   ],
+   "trust_rank": 1,
+   "status": "asserted",
+   "note": null,
+   "reading_confidence": 1.0,
+   "extraction": "table"
+  },
+  {
+   "id": "C046",
+   "subject": "HPU.discharge_pressure",
+   "predicate": "setpoint_change",
+   "value": {
+    "from": 180,
+    "to": 200
+   },
+   "unit": "bar",
+   "applies_when": {
+    "known": true,
+    "sw_min": "3.2",
+    "sw_max_exclusive": null
+   },
+   "evidence": [
+    "ecn_1042::011",
+    "revision_history::003"
+   ],
+   "docs": [
+    "ecn_1042",
+    "revision_history"
+   ],
+   "trust_rank": 1,
+   "status": "asserted",
+   "note": "effective software revision 3.2, released 2025-09-30 | ECN: 'a deliberate process change, not a sensor calibration artifact'",
+   "reading_confidence": 1.0,
+   "extraction": "rule"
+  },
+  {
+   "id": "C047",
+   "subject": "HPU.discharge_pressure",
+   "predicate": "normal_pressure",
+   "value": 180,
+   "unit": "bar",
+   "applies_when": {
+    "known": true,
+    "sw_min": null,
+    "sw_max_exclusive": "3.2"
+   },
+   "evidence": [
+    "ecn_1042::011",
+    "operator_manual::026",
+    "revision_history::003"
+   ],
+   "docs": [
+    "ecn_1042",
+    "operator_manual",
+    "revision_history"
+   ],
+   "trust_rank": 1,
+   "status": "asserted",
+   "note": "implied by the stated setpoint change (revision history) | implied by the stated setpoint change (ECN-1042) | measured by PS-04",
+   "reading_confidence": 1.0,
+   "extraction": "rule"
+  },
+  {
+   "id": "C048",
+   "subject": "HPU.discharge_pressure",
+   "predicate": "normal_pressure",
+   "value": 200,
+   "unit": "bar",
+   "applies_when": {
+    "known": true,
+    "sw_min": "3.2",
+    "sw_max_exclusive": null
+   },
+   "evidence": [
+    "ecn_1042::011",
+    "operator_manual::024",
+    "operator_manual::026",
+    "revision_history::003"
+   ],
+   "docs": [
+    "ecn_1042",
+    "operator_manual",
+    "revision_history"
+   ],
+   "trust_rank": 1,
+   "status": "asserted",
+   "note": "implied by the stated setpoint change (revision history) | implied by the stated setpoint change (ECN-1042) | measured by PS-04A",
+   "reading_confidence": 1.0,
+   "extraction": "rule"
+  },
+  {
+   "id": "C049",
+   "subject": "PS-04",
+   "predicate": "sensor_replacement",
+   "value": {
+    "replaced_by": "PS-04A"
+   },
+   "unit": null,
+   "applies_when": {
+    "known": true,
+    "sw_min": "3.2",
+    "sw_max_exclusive": null
+   },
+   "evidence": [
+    "component_register::003",
+    "ecn_1042::010",
+    "operator_manual::013",
+    "revision_history::003"
+   ],
+   "docs": [
+    "component_register",
+    "ecn_1042",
+    "operator_manual",
+    "revision_history"
+   ],
+   "trust_rank": 1,
+   "status": "asserted",
+   "note": null,
+   "reading_confidence": 1.0,
+   "extraction": "rule"
+  },
+  {
+   "id": "C050",
+   "subject": "software:3.2.1",
+   "predicate": "release_date",
+   "value": "2025-11-18",
+   "unit": null,
+   "applies_when": {
+    "known": false,
+    "sw_min": null,
+    "sw_max_exclusive": null
+   },
+   "evidence": [
+    "revision_history::004"
+   ],
+   "docs": [
+    "revision_history"
+   ],
+   "trust_rank": 1,
+   "status": "asserted",
+   "note": null,
+   "reading_confidence": 1.0,
+   "extraction": "table"
+  },
+  {
+   "id": "C051",
+   "subject": "software:3.2.1",
+   "predicate": "summary_of_changes",
+   "value": "Documentation correction: Alarm A17 condition text no longer names a specific sensor (PS-04 or PS-04A) so it reads correctly on units at either revision. Alarm thresholds unchanged. See ECN-1058.",
+   "unit": null,
+   "applies_when": {
+    "known": false,
+    "sw_min": null,
+    "sw_max_exclusive": null
+   },
+   "evidence": [
+    "revision_history::004"
+   ],
+   "docs": [
+    "revision_history"
+   ],
+   "trust_rank": 1,
+   "status": "asserted",
+   "note": null,
+   "reading_confidence": 1.0,
+   "extraction": "table"
+  },
+  {
+   "id": "C052",
+   "subject": "A17",
+   "predicate": "documentation_correction",
+   "value": "Documentation correction: Alarm A17 condition text no longer names a specific sensor (PS-04 or PS-04A) so it reads correctly on units at either revision. Alarm thresholds unchanged. See ECN-1058.",
+   "unit": null,
+   "applies_when": {
+    "known": true,
+    "sw_min": "3.2.1",
+    "sw_max_exclusive": null
+   },
+   "evidence": [
+    "revision_history::004"
+   ],
+   "docs": [
+    "revision_history"
+   ],
+   "trust_rank": 1,
+   "status": "asserted",
+   "note": "documentation only; thresholds unchanged",
+   "reading_confidence": 1.0,
+   "extraction": "rule"
+  },
+  {
+   "id": "C053",
+   "subject": "software:3.3",
+   "predicate": "release_date",
+   "value": "2026-04-07",
+   "unit": null,
+   "applies_when": {
+    "known": false,
+    "sw_min": null,
+    "sw_max_exclusive": null
+   },
+   "evidence": [
+    "revision_history::005"
+   ],
+   "docs": [
+    "revision_history"
+   ],
+   "trust_rank": 1,
+   "status": "planned",
+   "note": "source labels this release 'planned' (not confirmed released)",
+   "reading_confidence": 1.0,
+   "extraction": "table"
+  },
+  {
+   "id": "C054",
+   "subject": "software:3.3",
+   "predicate": "summary_of_changes",
+   "value": "Scheduled: extended diagnostics logging. No sensor or setpoint changes currently planned.",
+   "unit": null,
+   "applies_when": {
+    "known": false,
+    "sw_min": null,
+    "sw_max_exclusive": null
+   },
+   "evidence": [
+    "revision_history::005"
+   ],
+   "docs": [
+    "revision_history"
+   ],
+   "trust_rank": 1,
+   "status": "asserted",
+   "note": null,
+   "reading_confidence": 1.0,
+   "extraction": "table"
+  },
+  {
+   "id": "C055",
+   "subject": "doc:ECN-1042",
+   "predicate": "header.ecn_number",
+   "value": "ECN-1042",
+   "unit": null,
+   "applies_when": {
+    "known": false,
+    "sw_min": null,
+    "sw_max_exclusive": null
+   },
+   "evidence": [
+    "ecn_1042::004"
+   ],
+   "docs": [
+    "ecn_1042"
+   ],
+   "trust_rank": 1,
+   "status": "asserted",
+   "note": null,
+   "reading_confidence": 1.0,
+   "extraction": "kv"
+  },
+  {
+   "id": "C056",
+   "subject": "doc:ECN-1042",
+   "predicate": "header.title",
+   "value": "Pressure Sensor Replacement (PS-04 → PS-04A) and Operating Pressure Update",
+   "unit": null,
+   "applies_when": {
+    "known": false,
+    "sw_min": null,
+    "sw_max_exclusive": null
+   },
+   "evidence": [
+    "ecn_1042::005"
+   ],
+   "docs": [
+    "ecn_1042"
+   ],
+   "trust_rank": 1,
+   "status": "asserted",
+   "note": null,
+   "reading_confidence": 1.0,
+   "extraction": "kv"
+  },
+  {
+   "id": "C057",
+   "subject": "doc:ECN-1042",
+   "predicate": "header.effective",
+   "value": "Software Revision 3.2",
+   "unit": null,
+   "applies_when": {
+    "known": false,
+    "sw_min": null,
+    "sw_max_exclusive": null
+   },
+   "evidence": [
+    "ecn_1042::006"
+   ],
+   "docs": [
+    "ecn_1042"
+   ],
+   "trust_rank": 1,
+   "status": "asserted",
+   "note": null,
+   "reading_confidence": 1.0,
+   "extraction": "kv"
+  },
+  {
+   "id": "C058",
+   "subject": "doc:ECN-1042",
+   "predicate": "header.affected_assembly",
+   "value": "Hydraulic Power Unit (HPU)",
+   "unit": null,
+   "applies_when": {
+    "known": false,
+    "sw_min": null,
+    "sw_max_exclusive": null
+   },
+   "evidence": [
+    "ecn_1042::007"
+   ],
+   "docs": [
+    "ecn_1042"
+   ],
+   "trust_rank": 1,
+   "status": "asserted",
+   "note": null,
+   "reading_confidence": 1.0,
+   "extraction": "kv"
+  },
+  {
+   "id": "C059",
+   "subject": "doc:ECN-1042",
+   "predicate": "header.status",
+   "value": "Released",
+   "unit": null,
+   "applies_when": {
+    "known": false,
+    "sw_min": null,
+    "sw_max_exclusive": null
+   },
+   "evidence": [
+    "ecn_1042::008"
+   ],
+   "docs": [
+    "ecn_1042"
+   ],
+   "trust_rank": 1,
+   "status": "asserted",
+   "note": null,
+   "reading_confidence": 1.0,
+   "extraction": "kv"
+  },
+  {
+   "id": "C060",
+   "subject": "doc:ECN-1058",
+   "predicate": "header.ecn_number",
+   "value": "ECN-1058",
+   "unit": null,
+   "applies_when": {
+    "known": false,
+    "sw_min": null,
+    "sw_max_exclusive": null
+   },
+   "evidence": [
+    "ecn_1058::004"
+   ],
+   "docs": [
+    "ecn_1058"
+   ],
+   "trust_rank": 1,
+   "status": "asserted",
+   "note": null,
+   "reading_confidence": 1.0,
+   "extraction": "kv"
+  },
+  {
+   "id": "C061",
+   "subject": "doc:ECN-1058",
+   "predicate": "header.title",
+   "value": "Alarm A17 Threshold Reference Correction",
+   "unit": null,
+   "applies_when": {
+    "known": false,
+    "sw_min": null,
+    "sw_max_exclusive": null
+   },
+   "evidence": [
+    "ecn_1058::005"
+   ],
+   "docs": [
+    "ecn_1058"
+   ],
+   "trust_rank": 1,
+   "status": "asserted",
+   "note": null,
+   "reading_confidence": 1.0,
+   "extraction": "kv"
+  },
+  {
+   "id": "C062",
+   "subject": "doc:ECN-1058",
+   "predicate": "header.effective",
+   "value": "Immediately upon publication",
+   "unit": null,
+   "applies_when": {
+    "known": false,
+    "sw_min": null,
+    "sw_max_exclusive": null
+   },
+   "evidence": [
+    "ecn_1058::006"
+   ],
+   "docs": [
+    "ecn_1058"
+   ],
+   "trust_rank": 1,
+   "status": "asserted",
+   "note": null,
+   "reading_confidence": 1.0,
+   "extraction": "kv"
+  },
+  {
+   "id": "C063",
+   "subject": "doc:ECN-1058",
+   "predicate": "header.references",
+   "value": "ECN-1042",
+   "unit": null,
+   "applies_when": {
+    "known": false,
+    "sw_min": null,
+    "sw_max_exclusive": null
+   },
+   "evidence": [
+    "ecn_1058::007"
+   ],
+   "docs": [
+    "ecn_1058"
+   ],
+   "trust_rank": 1,
+   "status": "asserted",
+   "note": null,
+   "reading_confidence": 1.0,
+   "extraction": "kv"
+  },
+  {
+   "id": "C064",
+   "subject": "doc:ECN-1058",
+   "predicate": "header.status",
+   "value": "Released",
+   "unit": null,
+   "applies_when": {
+    "known": false,
+    "sw_min": null,
+    "sw_max_exclusive": null
+   },
+   "evidence": [
+    "ecn_1058::008"
+   ],
+   "docs": [
+    "ecn_1058"
+   ],
+   "trust_rank": 1,
+   "status": "asserted",
+   "note": null,
+   "reading_confidence": 1.0,
+   "extraction": "kv"
+  },
+  {
+   "id": "C065",
+   "subject": "change:PS-04->PS-04A",
+   "predicate": "introduced_by",
+   "value": "ECN-1042",
+   "unit": null,
+   "applies_when": {
+    "known": false,
+    "sw_min": null,
+    "sw_max_exclusive": null
+   },
+   "evidence": [
+    "component_register::003",
+    "ecn_1042::005"
+   ],
+   "docs": [
+    "component_register",
+    "ecn_1042"
+   ],
+   "trust_rank": 1,
+   "status": "asserted",
+   "note": "ECN-1042 title names the change; register note on PS-04 also cites ECN-1042",
+   "reading_confidence": 1.0,
+   "extraction": "rule"
+  },
+  {
+   "id": "C066",
+   "subject": "PS-04A",
+   "predicate": "firmware_requirement",
+   "value": ">= 3.2",
+   "unit": null,
+   "applies_when": {
+    "known": true,
+    "sw_min": null,
+    "sw_max_exclusive": null
+   },
+   "evidence": [
+    "ecn_1042::010"
+   ],
+   "docs": [
+    "ecn_1042"
+   ],
+   "trust_rank": 1,
+   "status": "asserted",
+   "note": "'controller firmware must be at revision 3.2 or later to read PS-04A correctly'",
+   "reading_confidence": 1.0,
+   "extraction": "rule"
+  },
+  {
+   "id": "C067",
+   "subject": "HPU.discharge_pressure",
+   "predicate": "setpoint_rationale",
+   "value": {
+    "benefit": "press cycle time",
+    "units": "Series-7 units manufactured after 2024"
+   },
+   "unit": null,
+   "applies_when": {
+    "known": false,
+    "sw_min": null,
+    "sw_max_exclusive": null
+   },
+   "evidence": [
+    "ecn_1042::011"
+   ],
+   "docs": [
+    "ecn_1042"
+   ],
+   "trust_rank": 1,
+   "status": "asserted",
+   "note": "stated as the reason for the setpoint, not as an applicability condition",
+   "reading_confidence": 1.0,
+   "extraction": "rule"
+  },
+  {
+   "id": "C068",
+   "subject": "PS-04",
+   "predicate": "sensor_support",
+   "value": "remains installed and supported",
+   "unit": null,
+   "applies_when": {
+    "known": true,
+    "sw_min": null,
+    "sw_max_exclusive": "3.2"
+   },
+   "evidence": [
+    "ecn_1042::012"
+   ],
+   "docs": [
+    "ecn_1042"
+   ],
+   "trust_rank": 1,
+   "status": "asserted",
+   "note": null,
+   "reading_confidence": 1.0,
+   "extraction": "rule"
+  },
+  {
+   "id": "C069",
+   "subject": "PS-04A",
+   "predicate": "installation_constraint",
+   "value": "do not install on firmware older than 3.2.",
+   "unit": null,
+   "applies_when": {
+    "known": true,
+    "sw_min": null,
+    "sw_max_exclusive": "3.2"
+   },
+   "evidence": [
+    "ecn_1042::012"
+   ],
+   "docs": [
+    "ecn_1042"
+   ],
+   "trust_rank": 1,
+   "status": "asserted",
+   "note": null,
+   "reading_confidence": 1.0,
+   "extraction": "rule"
+  },
+  {
+   "id": "C070",
+   "subject": "PS-04",
+   "predicate": "change_reason",
+   "value": {
+    "issue": "signal drift exceeded tolerance",
+    "after_months": 18,
+    "symptom": "nuisance Alarm A19"
+   },
+   "unit": null,
+   "applies_when": {
+    "known": false,
+    "sw_min": null,
+    "sw_max_exclusive": null
+   },
+   "evidence": [
+    "ecn_1042::014"
+   ],
+   "docs": [
+    "ecn_1042"
+   ],
+   "trust_rank": 1,
+   "status": "asserted",
+   "note": null,
+   "reading_confidence": 1.0,
+   "extraction": "rule"
+  },
+  {
+   "id": "C071",
+   "subject": "A17",
+   "predicate": "documentation_correction",
+   "value": "A17 low-pressure condition is evaluated against the pressure sensor active for the installed software revision (PS-04 before 3.2, PS-04A from 3.2); threshold logic unchanged",
+   "unit": null,
+   "applies_when": {
+    "known": false,
+    "sw_min": null,
+    "sw_max_exclusive": null
+   },
+   "evidence": [
+    "ecn_1058::010"
+   ],
+   "docs": [
+    "ecn_1058"
+   ],
+   "trust_rank": 1,
+   "status": "asserted",
+   "note": "documentation correction only; no firmware or hardware change",
+   "reading_confidence": 1.0,
+   "extraction": "rule"
+  },
+  {
+   "id": "C072",
+   "subject": "HPU.discharge_pressure",
+   "predicate": "setpoint_unchanged_by",
+   "value": "ECN-1058",
+   "unit": null,
+   "applies_when": {
+    "known": false,
+    "sw_min": null,
+    "sw_max_exclusive": null
+   },
+   "evidence": [
+    "ecn_1058::013"
+   ],
+   "docs": [
+    "ecn_1058"
+   ],
+   "trust_rank": 1,
+   "status": "asserted",
+   "note": null,
+   "reading_confidence": 1.0,
+   "extraction": "rule"
+  },
+  {
+   "id": "C073",
+   "subject": "HPU.discharge_pressure",
+   "predicate": "usage_warning",
+   "value": "do not compare live readings against 180 bar on revision 3.2+",
+   "unit": null,
+   "applies_when": {
+    "known": true,
+    "sw_min": "3.2",
+    "sw_max_exclusive": null
+   },
+   "evidence": [
+    "operator_manual::026"
+   ],
+   "docs": [
+    "operator_manual"
+   ],
+   "trust_rank": 1,
+   "status": "asserted",
+   "note": null,
+   "reading_confidence": 1.0,
+   "extraction": "rule"
+  },
+  {
+   "id": "C074",
+   "subject": "HPU",
+   "predicate": "function",
+   "value": "Generates and regulates hydraulic pressure",
+   "unit": null,
+   "applies_when": {
+    "known": false,
+    "sw_min": null,
+    "sw_max_exclusive": null
+   },
+   "evidence": [
+    "operator_manual::009"
+   ],
+   "docs": [
+    "operator_manual"
+   ],
+   "trust_rank": 1,
+   "status": "asserted",
+   "note": null,
+   "reading_confidence": 1.0,
+   "extraction": "table"
+  },
+  {
+   "id": "C075",
+   "subject": "IV-21",
+   "predicate": "function",
+   "value": "Isolates the HPU from the press circuit",
+   "unit": null,
+   "applies_when": {
+    "known": false,
+    "sw_min": null,
+    "sw_max_exclusive": null
+   },
+   "evidence": [
+    "operator_manual::010"
+   ],
+   "docs": [
+    "operator_manual"
+   ],
+   "trust_rank": 1,
+   "status": "asserted",
+   "note": null,
+   "reading_confidence": 1.0,
+   "extraction": "table"
+  },
+  {
+   "id": "C076",
+   "subject": "PS-04A",
+   "predicate": "function",
+   "value": "Reports HPU discharge pressure to PLC-03",
+   "unit": null,
+   "applies_when": {
+    "known": false,
+    "sw_min": null,
+    "sw_max_exclusive": null
+   },
+   "evidence": [
+    "operator_manual::011"
+   ],
+   "docs": [
+    "operator_manual"
+   ],
+   "trust_rank": 1,
+   "status": "asserted",
+   "note": null,
+   "reading_confidence": 1.0,
+   "extraction": "table"
+  },
+  {
+   "id": "C077",
+   "subject": "PLC-03",
+   "predicate": "function",
+   "value": "Supervises startup, monitoring, and alarms",
+   "unit": null,
+   "applies_when": {
+    "known": false,
+    "sw_min": null,
+    "sw_max_exclusive": null
+   },
+   "evidence": [
+    "operator_manual::012"
+   ],
+   "docs": [
+    "operator_manual"
+   ],
+   "trust_rank": 1,
+   "status": "asserted",
+   "note": null,
+   "reading_confidence": 1.0,
+   "extraction": "table"
+  },
+  {
+   "id": "C078",
+   "subject": "HPU",
+   "predicate": "startup_precondition",
+   "value": {
+    "key": "fluid_level_normal",
+    "state": "NORMAL"
+   },
+   "unit": null,
+   "applies_when": {
+    "known": false,
+    "sw_min": null,
+    "sw_max_exclusive": null
+   },
+   "evidence": [
+    "config_export::009",
+    "operator_manual::017",
+    "training_slides::011"
+   ],
+   "docs": [
+    "config_export",
+    "operator_manual",
+    "training_slides"
+   ],
+   "trust_rank": 1,
+   "status": "asserted",
+   "note": "training slide (secondary source)",
+   "reading_confidence": 1.0,
+   "extraction": "rule"
+  },
+  {
+   "id": "C079",
+   "subject": "HPU",
+   "predicate": "startup_precondition",
+   "value": {
+    "key": "iv21_open",
+    "state": "OPEN"
+   },
+   "unit": null,
+   "applies_when": {
+    "known": false,
+    "sw_min": null,
+    "sw_max_exclusive": null
+   },
+   "evidence": [
+    "config_export::006",
+    "operator_manual::018",
+    "training_slides::008"
+   ],
+   "docs": [
+    "config_export",
+    "operator_manual",
+    "training_slides"
+   ],
+   "trust_rank": 1,
+   "status": "asserted",
+   "note": "training slide (secondary source)",
+   "reading_confidence": 1.0,
+   "extraction": "rule"
+  },
+  {
+   "id": "C080",
+   "subject": "HPU",
+   "predicate": "startup_precondition",
+   "value": {
+    "key": "estop_reset",
+    "state": "RESET"
+   },
+   "unit": null,
+   "applies_when": {
+    "known": false,
+    "sw_min": null,
+    "sw_max_exclusive": null
+   },
+   "evidence": [
+    "config_export::007",
+    "operator_manual::019",
+    "training_slides::009"
+   ],
+   "docs": [
+    "config_export",
+    "operator_manual",
+    "training_slides"
+   ],
+   "trust_rank": 1,
+   "status": "asserted",
+   "note": "training slide (secondary source)",
+   "reading_confidence": 1.0,
+   "extraction": "rule"
+  },
+  {
+   "id": "C081",
+   "subject": "HPU",
+   "predicate": "startup_precondition",
+   "value": {
+    "key": "maintenance_panel_closed",
+    "state": "CLOSED"
+   },
+   "unit": null,
+   "applies_when": {
+    "known": false,
+    "sw_min": null,
+    "sw_max_exclusive": null
+   },
+   "evidence": [
+    "config_export::008",
+    "maintenance_manual::019",
+    "operator_manual::020",
+    "training_slides::010"
+   ],
+   "docs": [
+    "config_export",
+    "maintenance_manual",
+    "operator_manual",
+    "training_slides"
+   ],
+   "trust_rank": 1,
+   "status": "asserted",
+   "note": "stated as a WARNING (rotating components exposed) | training slide (secondary source)",
+   "reading_confidence": 1.0,
+   "extraction": "rule"
+  },
+  {
+   "id": "C082",
+   "subject": "PLC-03.reset",
+   "predicate": "reset_prohibited_above_bar",
+   "value": 50,
+   "unit": "bar",
+   "applies_when": {
+    "known": false,
+    "sw_min": null,
+    "sw_max_exclusive": null
+   },
+   "evidence": [
+    "config_export::024",
+    "maintenance_manual::008",
+    "operator_manual::030"
+   ],
+   "docs": [
+    "config_export",
+    "maintenance_manual",
+    "operator_manual"
+   ],
+   "trust_rank": 1,
+   "status": "asserted",
+   "note": "consequence: uncommanded valve transition | consequence: momentary uncommanded actuation of IV-21 | firmware blocks reset above this value",
+   "reading_confidence": 1.0,
+   "extraction": "rule"
+  },
+  {
+   "id": "C083",
+   "subject": "PLC-03.reset",
+   "predicate": "reset_precondition_action",
+   "value": "bleed pressure below 50 bar first (manual bleed procedure, Section 8)",
+   "unit": null,
+   "applies_when": {
+    "known": false,
+    "sw_min": null,
+    "sw_max_exclusive": null
+   },
+   "evidence": [
+    "operator_manual::030"
+   ],
+   "docs": [
+    "operator_manual"
+   ],
+   "trust_rank": 1,
+   "status": "asserted",
+   "note": null,
+   "reading_confidence": 1.0,
+   "extraction": "rule"
+  },
+  {
+   "id": "C084",
+   "subject": "A17",
+   "predicate": "alarm_name",
+   "value": "Hydraulic Pressure Low",
+   "unit": null,
+   "applies_when": {
+    "known": false,
+    "sw_min": null,
+    "sw_max_exclusive": null
+   },
+   "evidence": [
+    "operator_manual::028"
+   ],
+   "docs": [
+    "operator_manual"
+   ],
+   "trust_rank": 1,
+   "status": "asserted",
+   "note": null,
+   "reading_confidence": 1.0,
+   "extraction": "rule"
+  },
+  {
+   "id": "C085",
+   "subject": "HPU.discharge_pressure",
+   "predicate": "normal_pressure",
+   "value": 180,
+   "unit": "bar",
+   "applies_when": {
+    "known": true,
+    "sw_min": "3.0",
+    "sw_max_exclusive": "3.2"
+   },
+   "evidence": [
+    "legacy_manual_v1::019",
+    "legacy_manual_v1::021"
+   ],
+   "docs": [
+    "legacy_manual_v1"
+   ],
+   "trust_rank": 4,
+   "status": "asserted",
+   "note": "measured by PS-04; source is the superseded Revision 1 manual (software 3.0-3.1) | startup step in the superseded Revision 1 manual",
+   "reading_confidence": 1.0,
+   "extraction": "rule"
+  },
+  {
+   "id": "C086",
+   "subject": "HPU",
+   "predicate": "startup_precondition",
+   "value": {
+    "key": "fluid_level_normal",
+    "state": "NORMAL"
+   },
+   "unit": null,
+   "applies_when": {
+    "known": true,
+    "sw_min": "3.0",
+    "sw_max_exclusive": "3.2"
+   },
+   "evidence": [
+    "legacy_manual_v1::013"
+   ],
+   "docs": [
+    "legacy_manual_v1"
+   ],
+   "trust_rank": 4,
+   "status": "asserted",
+   "note": "superseded Revision 1 manual",
+   "reading_confidence": 1.0,
+   "extraction": "rule"
+  },
+  {
+   "id": "C087",
+   "subject": "HPU",
+   "predicate": "startup_precondition",
+   "value": {
+    "key": "iv21_open",
+    "state": "OPEN"
+   },
+   "unit": null,
+   "applies_when": {
+    "known": true,
+    "sw_min": "3.0",
+    "sw_max_exclusive": "3.2"
+   },
+   "evidence": [
+    "legacy_manual_v1::014"
+   ],
+   "docs": [
+    "legacy_manual_v1"
+   ],
+   "trust_rank": 4,
+   "status": "asserted",
+   "note": "superseded Revision 1 manual",
+   "reading_confidence": 1.0,
+   "extraction": "rule"
+  },
+  {
+   "id": "C088",
+   "subject": "HPU",
+   "predicate": "startup_precondition",
+   "value": {
+    "key": "estop_reset",
+    "state": "RESET"
+   },
+   "unit": null,
+   "applies_when": {
+    "known": true,
+    "sw_min": "3.0",
+    "sw_max_exclusive": "3.2"
+   },
+   "evidence": [
+    "legacy_manual_v1::015"
+   ],
+   "docs": [
+    "legacy_manual_v1"
+   ],
+   "trust_rank": 4,
+   "status": "asserted",
+   "note": "superseded Revision 1 manual",
+   "reading_confidence": 1.0,
+   "extraction": "rule"
+  },
+  {
+   "id": "C089",
+   "subject": "PLC-03.reset",
+   "predicate": "reset_permitted_below_bar",
+   "value": 50,
+   "unit": "bar",
+   "applies_when": {
+    "known": false,
+    "sw_min": null,
+    "sw_max_exclusive": null
+   },
+   "evidence": [
+    "maintenance_manual::009"
+   ],
+   "docs": [
+    "maintenance_manual"
+   ],
+   "trust_rank": 1,
+   "status": "asserted",
+   "note": "active sensor: PS-04 before software 3.2, PS-04A from 3.2",
+   "reading_confidence": 1.0,
+   "extraction": "rule"
+  },
+  {
+   "id": "C090",
+   "subject": "A17",
+   "predicate": "persistence_action",
+   "value": {
+    "persistence_s": 10,
+    "action": "Shutdown Procedure 4.7"
+   },
+   "unit": null,
+   "applies_when": {
+    "known": false,
+    "sw_min": null,
+    "sw_max_exclusive": null
+   },
+   "evidence": [
+    "alarm_reference::008",
+    "config_export::017",
+    "config_export::018",
+    "maintenance_manual::011"
+   ],
+   "docs": [
+    "alarm_reference",
+    "config_export",
+    "maintenance_manual"
+   ],
+   "trust_rank": 1,
+   "status": "asserted",
+   "note": "'Do not attempt to clear a persistent A17 by silencing the alarm alone'",
+   "reading_confidence": 1.0,
+   "extraction": "rule"
+  },
+  {
+   "id": "C091",
+   "subject": "A17",
+   "predicate": "alarm_note",
+   "value": "may clear on its own within a few seconds if caused by a transient pressure dip during valve transition",
+   "unit": null,
+   "applies_when": {
+    "known": false,
+    "sw_min": null,
+    "sw_max_exclusive": null
+   },
+   "evidence": [
+    "maintenance_manual::011"
+   ],
+   "docs": [
+    "maintenance_manual"
+   ],
+   "trust_rank": 1,
+   "status": "asserted",
+   "note": null,
+   "reading_confidence": 1.0,
+   "extraction": "rule"
+  },
+  {
+   "id": "C092",
+   "subject": "Shutdown Procedure 4.7",
+   "predicate": "procedure_steps",
+   "value": [
+    "close IV-21",
+    "confirm pressure decay",
+    "set POWER selector to OFF",
+    "tag out per site lockout/tagout procedure",
+    "then proceed to Section 6 (Troubleshooting)"
+   ],
+   "unit": null,
+   "applies_when": {
+    "known": false,
+    "sw_min": null,
+    "sw_max_exclusive": null
+   },
+   "evidence": [
+    "maintenance_manual::012"
+   ],
+   "docs": [
+    "maintenance_manual"
+   ],
+   "trust_rank": 1,
+   "status": "asserted",
+   "note": null,
+   "reading_confidence": 1.0,
+   "extraction": "rule"
+  },
+  {
+   "id": "C093",
+   "subject": "A17",
+   "predicate": "possible_cause_checklist",
+   "value": "hydraulic fluid level low",
+   "unit": null,
+   "applies_when": {
+    "known": false,
+    "sw_min": null,
+    "sw_max_exclusive": null
+   },
+   "evidence": [
+    "maintenance_manual::016"
+   ],
+   "docs": [
+    "maintenance_manual"
+   ],
+   "trust_rank": 1,
+   "status": "asserted",
+   "note": null,
+   "reading_confidence": 1.0,
+   "extraction": "rule"
+  },
+  {
+   "id": "C094",
+   "subject": "A17",
+   "predicate": "alarm_condition",
+   "value": "Hydraulic pressure below 150 bar",
+   "unit": null,
+   "applies_when": {
+    "known": false,
+    "sw_min": null,
+    "sw_max_exclusive": null
+   },
+   "evidence": [
+    "alarm_reference::005"
+   ],
+   "docs": [
+    "alarm_reference"
+   ],
+   "trust_rank": 1,
+   "status": "asserted",
+   "note": null,
+   "reading_confidence": 1.0,
+   "extraction": "table"
+  },
+  {
+   "id": "C095",
+   "subject": "A17",
+   "predicate": "alarm_threshold",
+   "value": {
+    "op": "<",
+    "value": 150
+   },
+   "unit": "bar",
+   "applies_when": {
+    "known": false,
+    "sw_min": null,
+    "sw_max_exclusive": null
+   },
+   "evidence": [
+    "alarm_reference::005",
+    "config_export::011"
+   ],
+   "docs": [
+    "alarm_reference",
+    "config_export"
+   ],
+   "trust_rank": 1,
+   "status": "asserted",
+   "note": null,
+   "reading_confidence": 1.0,
+   "extraction": "table"
+  },
+  {
+   "id": "C096",
+   "subject": "A17",
+   "predicate": "alarm_causes",
+   "value": [
+    "IV-21 closed or partially closed",
+    "Low hydraulic fluid",
+    "Pressure sensor signal invalid"
+   ],
+   "unit": null,
+   "applies_when": {
+    "known": false,
+    "sw_min": null,
+    "sw_max_exclusive": null
+   },
+   "evidence": [
+    "alarm_reference::005"
+   ],
+   "docs": [
+    "alarm_reference"
+   ],
+   "trust_rank": 1,
+   "status": "asserted",
+   "note": null,
+   "reading_confidence": 1.0,
+   "extraction": "table"
+  },
+  {
+   "id": "C097",
+   "subject": "A17",
+   "predicate": "alarm_panel_indication",
+   "value": "RED",
+   "unit": null,
+   "applies_when": {
+    "known": false,
+    "sw_min": null,
+    "sw_max_exclusive": null
+   },
+   "evidence": [
+    "alarm_reference::005"
+   ],
+   "docs": [
+    "alarm_reference"
+   ],
+   "trust_rank": 1,
+   "status": "asserted",
+   "note": null,
+   "reading_confidence": 1.0,
+   "extraction": "table"
+  },
+  {
+   "id": "C098",
+   "subject": "A17",
+   "predicate": "alarm_required_action",
+   "value": "See Section 4 of the Maintenance Manual. If persistent > 10 s, run Shutdown Proc. 4.7*",
+   "unit": null,
+   "applies_when": {
+    "known": false,
+    "sw_min": null,
+    "sw_max_exclusive": null
+   },
+   "evidence": [
+    "alarm_reference::005"
+   ],
+   "docs": [
+    "alarm_reference"
+   ],
+   "trust_rank": 1,
+   "status": "asserted",
+   "note": null,
+   "reading_confidence": 1.0,
+   "extraction": "table"
+  },
+  {
+   "id": "C099",
+   "subject": "A18",
+   "predicate": "alarm_condition",
+   "value": "Hydraulic pressure above 220 bar",
+   "unit": null,
+   "applies_when": {
+    "known": false,
+    "sw_min": null,
+    "sw_max_exclusive": null
+   },
+   "evidence": [
+    "alarm_reference::006"
+   ],
+   "docs": [
+    "alarm_reference"
+   ],
+   "trust_rank": 1,
+   "status": "asserted",
+   "note": null,
+   "reading_confidence": 1.0,
+   "extraction": "table"
+  },
+  {
+   "id": "C100",
+   "subject": "A18",
+   "predicate": "alarm_threshold",
+   "value": {
+    "op": ">",
+    "value": 220
+   },
+   "unit": "bar",
+   "applies_when": {
+    "known": false,
+    "sw_min": null,
+    "sw_max_exclusive": null
+   },
+   "evidence": [
+    "alarm_reference::006",
+    "config_export::012"
+   ],
+   "docs": [
+    "alarm_reference",
+    "config_export"
+   ],
+   "trust_rank": 1,
+   "status": "asserted",
+   "note": null,
+   "reading_confidence": 1.0,
+   "extraction": "table"
+  },
+  {
+   "id": "C101",
+   "subject": "A18",
+   "predicate": "alarm_causes",
+   "value": [
+    "Relief valve fault",
+    "Setpoint misconfiguration"
+   ],
+   "unit": null,
+   "applies_when": {
+    "known": false,
+    "sw_min": null,
+    "sw_max_exclusive": null
+   },
+   "evidence": [
+    "alarm_reference::006"
+   ],
+   "docs": [
+    "alarm_reference"
+   ],
+   "trust_rank": 1,
+   "status": "asserted",
+   "note": null,
+   "reading_confidence": 1.0,
+   "extraction": "table"
+  },
+  {
+   "id": "C102",
+   "subject": "A18",
+   "predicate": "alarm_panel_indication",
+   "value": "AMBER",
+   "unit": null,
+   "applies_when": {
+    "known": false,
+    "sw_min": null,
+    "sw_max_exclusive": null
+   },
+   "evidence": [
+    "alarm_reference::006"
+   ],
+   "docs": [
+    "alarm_reference"
+   ],
+   "trust_rank": 1,
+   "status": "asserted",
+   "note": null,
+   "reading_confidence": 1.0,
+   "extraction": "table"
+  },
+  {
+   "id": "C103",
+   "subject": "A18",
+   "predicate": "alarm_required_action",
+   "value": "Stop the HPU. Do not restart until pressure relief is verified.",
+   "unit": null,
+   "applies_when": {
+    "known": false,
+    "sw_min": null,
+    "sw_max_exclusive": null
+   },
+   "evidence": [
+    "alarm_reference::006"
+   ],
+   "docs": [
+    "alarm_reference"
+   ],
+   "trust_rank": 1,
+   "status": "asserted",
+   "note": null,
+   "reading_confidence": 1.0,
+   "extraction": "table"
+  },
+  {
+   "id": "C104",
+   "subject": "A19",
+   "predicate": "alarm_condition",
+   "value": "Pressure sensor signal invalid",
+   "unit": null,
+   "applies_when": {
+    "known": false,
+    "sw_min": null,
+    "sw_max_exclusive": null
+   },
+   "evidence": [
+    "alarm_reference::007"
+   ],
+   "docs": [
+    "alarm_reference"
+   ],
+   "trust_rank": 1,
+   "status": "asserted",
+   "note": null,
+   "reading_confidence": 1.0,
+   "extraction": "table"
+  },
+  {
+   "id": "C105",
+   "subject": "A19",
+   "predicate": "alarm_causes",
+   "value": [
+    "Sensor wiring fault",
+    "Sensor drift beyond tolerance (see ECN-1042)"
+   ],
+   "unit": null,
+   "applies_when": {
+    "known": false,
+    "sw_min": null,
+    "sw_max_exclusive": null
+   },
+   "evidence": [
+    "alarm_reference::007"
+   ],
+   "docs": [
+    "alarm_reference"
+   ],
+   "trust_rank": 1,
+   "status": "asserted",
+   "note": null,
+   "reading_confidence": 1.0,
+   "extraction": "table"
+  },
+  {
+   "id": "C106",
+   "subject": "A19",
+   "predicate": "alarm_panel_indication",
+   "value": "RED",
+   "unit": null,
+   "applies_when": {
+    "known": false,
+    "sw_min": null,
+    "sw_max_exclusive": null
+   },
+   "evidence": [
+    "alarm_reference::007"
+   ],
+   "docs": [
+    "alarm_reference"
+   ],
+   "trust_rank": 1,
+   "status": "asserted",
+   "note": null,
+   "reading_confidence": 1.0,
+   "extraction": "table"
+  },
+  {
+   "id": "C107",
+   "subject": "A19",
+   "predicate": "alarm_required_action",
+   "value": "Replace sensor per Maintenance Manual Section 6.",
+   "unit": null,
+   "applies_when": {
+    "known": false,
+    "sw_min": null,
+    "sw_max_exclusive": null
+   },
+   "evidence": [
+    "alarm_reference::007"
+   ],
+   "docs": [
+    "alarm_reference"
+   ],
+   "trust_rank": 1,
+   "status": "asserted",
+   "note": null,
+   "reading_confidence": 1.0,
+   "extraction": "table"
+  },
+  {
+   "id": "C108",
+   "subject": "alarm_reference",
+   "predicate": "coverage_note",
+   "value": "only A17-A19 are in this package; A01-A16 and A20-A34 are in AEG-AL-701, not supplied",
+   "unit": null,
+   "applies_when": {
+    "known": false,
+    "sw_min": null,
+    "sw_max_exclusive": null
+   },
+   "evidence": [
+    "alarm_reference::011"
+   ],
+   "docs": [
+    "alarm_reference"
+   ],
+   "trust_rank": 1,
+   "status": "asserted",
+   "note": null,
+   "reading_confidence": 1.0,
+   "extraction": "rule"
+  },
+  {
+   "id": "C109",
+   "subject": "glossary",
+   "predicate": "coverage_note",
+   "value": "glossary lacks entries for 'HP unit' and 'PS-04'; absence from the glossary does not mean they are different things",
+   "unit": null,
+   "applies_when": {
+    "known": false,
+    "sw_min": null,
+    "sw_max_exclusive": null
+   },
+   "evidence": [
+    "terminology_glossary::014"
+   ],
+   "docs": [
+    "terminology_glossary"
+   ],
+   "trust_rank": 2,
+   "status": "asserted",
+   "note": null,
+   "reading_confidence": 1.0,
+   "extraction": "rule"
+  },
+  {
+   "id": "C110",
+   "subject": "HPU",
+   "predicate": "alias_used_in_training",
+   "value": "hydraulic pack",
+   "unit": null,
+   "applies_when": {
+    "known": false,
+    "sw_min": null,
+    "sw_max_exclusive": null
+   },
+   "evidence": [
+    "training_slides::005"
+   ],
+   "docs": [
+    "training_slides"
+   ],
+   "trust_rank": 3,
+   "status": "asserted",
+   "note": "informal name used in slides; resolves to a register entity",
+   "reading_confidence": 1.0,
+   "extraction": "rule"
+  },
+  {
+   "id": "C111",
+   "subject": "Auxiliary Reservoir",
+   "predicate": "introduces_term",
+   "value": "present in training slides, absent from the manuals and register",
+   "unit": null,
+   "applies_when": {
+    "known": false,
+    "sw_min": null,
+    "sw_max_exclusive": null
+   },
+   "evidence": [
+    "hydraulic_schematic::012",
+    "training_slides::006"
+   ],
+   "docs": [
+    "hydraulic_schematic",
+    "training_slides"
+   ],
+   "trust_rank": 2,
+   "status": "asserted",
+   "note": "slides call it a Line 4/5-specific configuration detail",
+   "reading_confidence": 1.0,
+   "extraction": "rule"
+  },
+  {
+   "id": "C112",
+   "subject": "PLC-03",
+   "predicate": "connected_to",
+   "value": {
+    "to": "HPU",
+    "line_colour": "grey",
+    "line_meaning": "hydraulic fluid path"
+   },
+   "unit": null,
+   "applies_when": {
+    "known": false,
+    "sw_min": null,
+    "sw_max_exclusive": null
+   },
+   "evidence": [
+    "hydraulic_schematic::013"
+   ],
+   "docs": [
+    "hydraulic_schematic"
+   ],
+   "trust_rank": 2,
+   "status": "asserted",
+   "note": "hydraulic_schematic; drawings are undirected",
+   "reading_confidence": 1.0,
+   "extraction": "geometry"
+  },
+  {
+   "id": "C113",
+   "subject": "PLC-03",
+   "predicate": "connected_to",
+   "value": {
+    "to": "PS-04A",
+    "line_colour": "purple",
+    "line_meaning": "control/signal connections to PLC-03"
+   },
+   "unit": null,
+   "applies_when": {
+    "known": false,
+    "sw_min": null,
+    "sw_max_exclusive": null
+   },
+   "evidence": [
+    "hydraulic_schematic::014"
+   ],
+   "docs": [
+    "hydraulic_schematic"
+   ],
+   "trust_rank": 2,
+   "status": "asserted",
+   "note": "hydraulic_schematic; drawings are undirected",
+   "reading_confidence": 1.0,
+   "extraction": "geometry"
+  },
+  {
+   "id": "C114",
+   "subject": "PLC-03",
+   "predicate": "connected_to",
+   "value": {
+    "to": "IV-21",
+    "line_colour": "purple",
+    "line_meaning": "control/signal connections to PLC-03"
+   },
+   "unit": null,
+   "applies_when": {
+    "known": false,
+    "sw_min": null,
+    "sw_max_exclusive": null
+   },
+   "evidence": [
+    "hydraulic_schematic::015"
+   ],
+   "docs": [
+    "hydraulic_schematic"
+   ],
+   "trust_rank": 2,
+   "status": "asserted",
+   "note": "hydraulic_schematic; drawings are undirected",
+   "reading_confidence": 1.0,
+   "extraction": "geometry"
+  },
+  {
+   "id": "C115",
+   "subject": "PS-04A",
+   "predicate": "connected_to",
+   "value": {
+    "to": "HPU",
+    "line_colour": "grey",
+    "line_meaning": "hydraulic fluid path"
+   },
+   "unit": null,
+   "applies_when": {
+    "known": false,
+    "sw_min": null,
+    "sw_max_exclusive": null
+   },
+   "evidence": [
+    "hydraulic_schematic::016"
+   ],
+   "docs": [
+    "hydraulic_schematic"
+   ],
+   "trust_rank": 2,
+   "status": "asserted",
+   "note": "hydraulic_schematic; drawings are undirected",
+   "reading_confidence": 1.0,
+   "extraction": "geometry"
+  },
+  {
+   "id": "C116",
+   "subject": "HPU",
+   "predicate": "connected_to",
+   "value": {
+    "to": "IV-21",
+    "line_colour": "grey",
+    "line_meaning": "hydraulic fluid path"
+   },
+   "unit": null,
+   "applies_when": {
+    "known": false,
+    "sw_min": null,
+    "sw_max_exclusive": null
+   },
+   "evidence": [
+    "hydraulic_schematic::017"
+   ],
+   "docs": [
+    "hydraulic_schematic"
+   ],
+   "trust_rank": 2,
+   "status": "asserted",
+   "note": "hydraulic_schematic; drawings are undirected",
+   "reading_confidence": 1.0,
+   "extraction": "geometry"
+  },
+  {
+   "id": "C117",
+   "subject": "HPU",
+   "predicate": "connected_to",
+   "value": {
+    "to": "Main Reservoir",
+    "line_colour": "grey",
+    "line_meaning": "hydraulic fluid path"
+   },
+   "unit": null,
+   "applies_when": {
+    "known": false,
+    "sw_min": null,
+    "sw_max_exclusive": null
+   },
+   "evidence": [
+    "hydraulic_schematic::018"
+   ],
+   "docs": [
+    "hydraulic_schematic"
+   ],
+   "trust_rank": 2,
+   "status": "asserted",
+   "note": "hydraulic_schematic; drawings are undirected",
+   "reading_confidence": 1.0,
+   "extraction": "geometry"
+  },
+  {
+   "id": "C118",
+   "subject": "Main Reservoir",
+   "predicate": "connected_to",
+   "value": {
+    "to": "Press Circuit",
+    "line_colour": "grey",
+    "line_meaning": "hydraulic fluid path"
+   },
+   "unit": null,
+   "applies_when": {
+    "known": false,
+    "sw_min": null,
+    "sw_max_exclusive": null
+   },
+   "evidence": [
+    "hydraulic_schematic::019"
+   ],
+   "docs": [
+    "hydraulic_schematic"
+   ],
+   "trust_rank": 2,
+   "status": "asserted",
+   "note": "hydraulic_schematic; drawings are undirected",
+   "reading_confidence": 1.0,
+   "extraction": "geometry"
+  },
+  {
+   "id": "C119",
+   "subject": "IV-21",
+   "predicate": "connected_to",
+   "value": {
+    "to": "Press Circuit",
+    "line_colour": "grey",
+    "line_meaning": "hydraulic fluid path"
+   },
+   "unit": null,
+   "applies_when": {
+    "known": false,
+    "sw_min": null,
+    "sw_max_exclusive": null
+   },
+   "evidence": [
+    "hydraulic_schematic::020"
+   ],
+   "docs": [
+    "hydraulic_schematic"
+   ],
+   "trust_rank": 2,
+   "status": "asserted",
+   "note": "hydraulic_schematic; drawings are undirected",
+   "reading_confidence": 1.0,
+   "extraction": "geometry"
+  },
+  {
+   "id": "C120",
+   "subject": "Main Reservoir",
+   "predicate": "connected_to",
+   "value": {
+    "to": "Auxiliary Reservoir",
+    "line_colour": "tan",
+    "line_meaning": "reservoir interconnect"
+   },
+   "unit": null,
+   "applies_when": {
+    "known": false,
+    "sw_min": null,
+    "sw_max_exclusive": null
+   },
+   "evidence": [
+    "hydraulic_schematic::021"
+   ],
+   "docs": [
+    "hydraulic_schematic"
+   ],
+   "trust_rank": 2,
+   "status": "asserted",
+   "note": "hydraulic_schematic; drawings are undirected",
+   "reading_confidence": 1.0,
+   "extraction": "geometry"
+  },
+  {
+   "id": "C121",
+   "subject": "PLC-03",
+   "predicate": "connected_to",
+   "value": {
+    "to": "TB-7",
+    "line_colour": "grey",
+    "line_meaning": null
+   },
+   "unit": null,
+   "applies_when": {
+    "known": false,
+    "sw_min": null,
+    "sw_max_exclusive": null
+   },
+   "evidence": [
+    "wiring_diagram::010"
+   ],
+   "docs": [
+    "wiring_diagram"
+   ],
+   "trust_rank": 2,
+   "status": "asserted",
+   "note": "wiring_diagram; drawings are undirected",
+   "reading_confidence": 1.0,
+   "extraction": "geometry"
+  },
+  {
+   "id": "C122",
+   "subject": "TB-7",
+   "predicate": "connected_to",
+   "value": {
+    "to": "Connector J-14",
+    "line_colour": "grey",
+    "line_meaning": null
+   },
+   "unit": null,
+   "applies_when": {
+    "known": false,
+    "sw_min": null,
+    "sw_max_exclusive": null
+   },
+   "evidence": [
+    "wiring_diagram::011"
+   ],
+   "docs": [
+    "wiring_diagram"
+   ],
+   "trust_rank": 2,
+   "status": "asserted",
+   "note": "wiring_diagram; drawings are undirected",
+   "reading_confidence": 1.0,
+   "extraction": "geometry"
+  },
+  {
+   "id": "C123",
+   "subject": "TB-7",
+   "predicate": "connected_to",
+   "value": {
+    "to": "Connector J-15",
+    "line_colour": "grey",
+    "line_meaning": null
+   },
+   "unit": null,
+   "applies_when": {
+    "known": false,
+    "sw_min": null,
+    "sw_max_exclusive": null
+   },
+   "evidence": [
+    "wiring_diagram::012"
+   ],
+   "docs": [
+    "wiring_diagram"
+   ],
+   "trust_rank": 2,
+   "status": "asserted",
+   "note": "wiring_diagram; drawings are undirected",
+   "reading_confidence": 1.0,
+   "extraction": "geometry"
+  },
+  {
+   "id": "C124",
+   "subject": "Connector J-14",
+   "predicate": "connected_to",
+   "value": {
+    "to": "PS-04A",
+    "line_colour": "grey",
+    "line_meaning": null
+   },
+   "unit": null,
+   "applies_when": {
+    "known": false,
+    "sw_min": null,
+    "sw_max_exclusive": null
+   },
+   "evidence": [
+    "wiring_diagram::013"
+   ],
+   "docs": [
+    "wiring_diagram"
+   ],
+   "trust_rank": 2,
+   "status": "asserted",
+   "note": "wiring_diagram; drawings are undirected",
+   "reading_confidence": 1.0,
+   "extraction": "geometry"
+  },
+  {
+   "id": "C125",
+   "subject": "Connector J-15",
+   "predicate": "connected_to",
+   "value": {
+    "to": "IV-21 SOLENOID",
+    "line_colour": "grey",
+    "line_meaning": null
+   },
+   "unit": null,
+   "applies_when": {
+    "known": false,
+    "sw_min": null,
+    "sw_max_exclusive": null
+   },
+   "evidence": [
+    "wiring_diagram::014"
+   ],
+   "docs": [
+    "wiring_diagram"
+   ],
+   "trust_rank": 2,
+   "status": "asserted",
+   "note": "wiring_diagram; drawings are undirected",
+   "reading_confidence": 1.0,
+   "extraction": "geometry"
+  },
+  {
+   "id": "C126",
+   "subject": "Q1",
+   "predicate": "connected_to",
+   "value": {
+    "to": "T1"
+   },
+   "unit": null,
+   "applies_when": {
+    "known": false,
+    "sw_min": null,
+    "sw_max_exclusive": null
+   },
+   "evidence": [
+    "electrical_diagram::009"
+   ],
+   "docs": [
+    "electrical_diagram"
+   ],
+   "trust_rank": 2,
+   "status": "asserted",
+   "note": "electrical_diagram; drawings are undirected",
+   "reading_confidence": 0.8,
+   "extraction": "vision"
+  },
+  {
+   "id": "C127",
+   "subject": "T1",
+   "predicate": "connected_to",
+   "value": {
+    "to": "PLC-03 24VDC POWER SUPPLY"
+   },
+   "unit": null,
+   "applies_when": {
+    "known": false,
+    "sw_min": null,
+    "sw_max_exclusive": null
+   },
+   "evidence": [
+    "electrical_diagram::010"
+   ],
+   "docs": [
+    "electrical_diagram"
+   ],
+   "trust_rank": 2,
+   "status": "asserted",
+   "note": "electrical_diagram; drawings are undirected",
+   "reading_confidence": 0.8,
+   "extraction": "vision"
+  },
+  {
+   "id": "C128",
+   "subject": "T1",
+   "predicate": "connected_to",
+   "value": {
+    "to": "PLC-03 I/O RACK"
+   },
+   "unit": null,
+   "applies_when": {
+    "known": false,
+    "sw_min": null,
+    "sw_max_exclusive": null
+   },
+   "evidence": [
+    "electrical_diagram::011"
+   ],
+   "docs": [
+    "electrical_diagram"
+   ],
+   "trust_rank": 2,
+   "status": "asserted",
+   "note": "electrical_diagram; drawings are undirected",
+   "reading_confidence": 0.8,
+   "extraction": "vision"
+  },
+  {
+   "id": "C129",
+   "subject": "PLC-03 24VDC POWER SUPPLY",
+   "predicate": "connected_to",
+   "value": {
+    "to": "PLC-03 I/O RACK"
+   },
+   "unit": null,
+   "applies_when": {
+    "known": false,
+    "sw_min": null,
+    "sw_max_exclusive": null
+   },
+   "evidence": [
+    "electrical_diagram::012"
+   ],
+   "docs": [
+    "electrical_diagram"
+   ],
+   "trust_rank": 2,
+   "status": "asserted",
+   "note": "electrical_diagram; drawings are undirected",
+   "reading_confidence": 0.8,
+   "extraction": "vision"
+  },
+  {
+   "id": "C130",
+   "subject": "PLC-03 24VDC POWER SUPPLY",
+   "predicate": "connected_to",
+   "value": {
+    "to": "SENSOR LOOP POWER 24VDC"
+   },
+   "unit": null,
+   "applies_when": {
+    "known": false,
+    "sw_min": null,
+    "sw_max_exclusive": null
+   },
+   "evidence": [
+    "electrical_diagram::013"
+   ],
+   "docs": [
+    "electrical_diagram"
+   ],
+   "trust_rank": 2,
+   "status": "asserted",
+   "note": "electrical_diagram; drawings are undirected",
+   "reading_confidence": 0.8,
+   "extraction": "vision"
+  },
+  {
+   "id": "C131",
+   "subject": "PLC-03 I/O RACK",
+   "predicate": "connected_to",
+   "value": {
+    "to": "E-STOP SAFETY RELAY KA1"
+   },
+   "unit": null,
+   "applies_when": {
+    "known": false,
+    "sw_min": null,
+    "sw_max_exclusive": null
+   },
+   "evidence": [
+    "electrical_diagram::014"
+   ],
+   "docs": [
+    "electrical_diagram"
+   ],
+   "trust_rank": 2,
+   "status": "asserted",
+   "note": "electrical_diagram; drawings are undirected",
+   "reading_confidence": 0.8,
+   "extraction": "vision"
+  },
+  {
+   "id": "C132",
+   "subject": "PLC-03 I/O RACK",
+   "predicate": "connected_to",
+   "value": {
+    "to": "IV-21 VALVE DRIVER"
+   },
+   "unit": null,
+   "applies_when": {
+    "known": false,
+    "sw_min": null,
+    "sw_max_exclusive": null
+   },
+   "evidence": [
+    "electrical_diagram::015"
+   ],
+   "docs": [
+    "electrical_diagram"
+   ],
+   "trust_rank": 2,
+   "status": "asserted",
+   "note": "electrical_diagram; drawings are undirected",
+   "reading_confidence": 0.8,
+   "extraction": "vision"
+  },
+  {
+   "id": "C133",
+   "subject": "config:export_metadata.system",
+   "predicate": "config_value",
+   "value": "Aegis Series-7 HCS",
+   "unit": null,
+   "applies_when": {
+    "known": false,
+    "sw_min": null,
+    "sw_max_exclusive": null
+   },
+   "evidence": [
+    "config_export::001"
+   ],
+   "docs": [
+    "config_export"
+   ],
+   "trust_rank": 2,
+   "status": "asserted",
+   "note": null,
+   "reading_confidence": 1.0,
+   "extraction": "json"
+  },
+  {
+   "id": "C134",
+   "subject": "config:export_metadata.controller_id",
+   "predicate": "config_value",
+   "value": "PLC-03",
+   "unit": null,
+   "applies_when": {
+    "known": false,
+    "sw_min": null,
+    "sw_max_exclusive": null
+   },
+   "evidence": [
+    "config_export::002"
+   ],
+   "docs": [
+    "config_export"
+   ],
+   "trust_rank": 2,
+   "status": "asserted",
+   "note": null,
+   "reading_confidence": 1.0,
+   "extraction": "json"
+  },
+  {
+   "id": "C135",
+   "subject": "config:export_metadata.firmware_version",
+   "predicate": "config_value",
+   "value": "3.2.1",
+   "unit": null,
+   "applies_when": {
+    "known": false,
+    "sw_min": null,
+    "sw_max_exclusive": null
+   },
+   "evidence": [
+    "config_export::003"
+   ],
+   "docs": [
+    "config_export"
+   ],
+   "trust_rank": 2,
+   "status": "asserted",
+   "note": null,
+   "reading_confidence": 1.0,
+   "extraction": "json"
+  },
+  {
+   "id": "C136",
+   "subject": "config:export_metadata.export_timestamp",
+   "predicate": "config_value",
+   "value": "2026-02-03T09:14:22Z",
+   "unit": null,
+   "applies_when": {
+    "known": false,
+    "sw_min": null,
+    "sw_max_exclusive": null
+   },
+   "evidence": [
+    "config_export::004"
+   ],
+   "docs": [
+    "config_export"
+   ],
+   "trust_rank": 2,
+   "status": "asserted",
+   "note": null,
+   "reading_confidence": 1.0,
+   "extraction": "json"
+  },
+  {
+   "id": "C137",
+   "subject": "config:export_metadata.export_tool",
+   "predicate": "config_value",
+   "value": "AegisConfigExport v1.4",
+   "unit": null,
+   "applies_when": {
+    "known": false,
+    "sw_min": null,
+    "sw_max_exclusive": null
+   },
+   "evidence": [
+    "config_export::005"
+   ],
+   "docs": [
+    "config_export"
+   ],
+   "trust_rank": 2,
+   "status": "asserted",
+   "note": null,
+   "reading_confidence": 1.0,
+   "extraction": "json"
+  },
+  {
+   "id": "C138",
+   "subject": "config:startup_interlocks.valve_iv21_required_state",
+   "predicate": "config_value",
+   "value": "OPEN",
+   "unit": null,
+   "applies_when": {
+    "known": false,
+    "sw_min": null,
+    "sw_max_exclusive": null
+   },
+   "evidence": [
+    "config_export::006"
+   ],
+   "docs": [
+    "config_export"
+   ],
+   "trust_rank": 2,
+   "status": "asserted",
+   "note": null,
+   "reading_confidence": 1.0,
+   "extraction": "json"
+  },
+  {
+   "id": "C139",
+   "subject": "config:startup_interlocks.estop_required_state",
+   "predicate": "config_value",
+   "value": "RESET",
+   "unit": null,
+   "applies_when": {
+    "known": false,
+    "sw_min": null,
+    "sw_max_exclusive": null
+   },
+   "evidence": [
+    "config_export::007"
+   ],
+   "docs": [
+    "config_export"
+   ],
+   "trust_rank": 2,
+   "status": "asserted",
+   "note": null,
+   "reading_confidence": 1.0,
+   "extraction": "json"
+  },
+  {
+   "id": "C140",
+   "subject": "config:startup_interlocks.maintenance_panel_required_state",
+   "predicate": "config_value",
+   "value": "CLOSED",
+   "unit": null,
+   "applies_when": {
+    "known": false,
+    "sw_min": null,
+    "sw_max_exclusive": null
+   },
+   "evidence": [
+    "config_export::008"
+   ],
+   "docs": [
+    "config_export"
+   ],
+   "trust_rank": 2,
+   "status": "asserted",
+   "note": null,
+   "reading_confidence": 1.0,
+   "extraction": "json"
+  },
+  {
+   "id": "C141",
+   "subject": "config:startup_interlocks.fluid_level_required_band",
+   "predicate": "config_value",
+   "value": "NORMAL",
+   "unit": null,
+   "applies_when": {
+    "known": false,
+    "sw_min": null,
+    "sw_max_exclusive": null
+   },
+   "evidence": [
+    "config_export::009"
+   ],
+   "docs": [
+    "config_export"
+   ],
+   "trust_rank": 2,
+   "status": "asserted",
+   "note": null,
+   "reading_confidence": 1.0,
+   "extraction": "json"
+  },
+  {
+   "id": "C142",
+   "subject": "config:sensors.sensor_ps04a_threshold_bar",
+   "predicate": "config_value",
+   "value": 200,
+   "unit": null,
+   "applies_when": {
+    "known": false,
+    "sw_min": null,
+    "sw_max_exclusive": null
+   },
+   "evidence": [
+    "config_export::010"
+   ],
+   "docs": [
+    "config_export"
+   ],
+   "trust_rank": 2,
+   "status": "asserted",
+   "note": null,
+   "reading_confidence": 1.0,
+   "extraction": "json"
+  },
+  {
+   "id": "C143",
+   "subject": "config:sensors.sensor_ps04a_alarm_low_bar",
+   "predicate": "config_value",
+   "value": 150,
+   "unit": null,
+   "applies_when": {
+    "known": false,
+    "sw_min": null,
+    "sw_max_exclusive": null
+   },
+   "evidence": [
+    "config_export::011"
+   ],
+   "docs": [
+    "config_export"
+   ],
+   "trust_rank": 2,
+   "status": "asserted",
+   "note": null,
+   "reading_confidence": 1.0,
+   "extraction": "json"
+  },
+  {
+   "id": "C144",
+   "subject": "config:sensors.sensor_ps04a_alarm_high_bar",
+   "predicate": "config_value",
+   "value": 220,
+   "unit": null,
+   "applies_when": {
+    "known": false,
+    "sw_min": null,
+    "sw_max_exclusive": null
+   },
+   "evidence": [
+    "config_export::012"
+   ],
+   "docs": [
+    "config_export"
+   ],
+   "trust_rank": 2,
+   "status": "asserted",
+   "note": null,
+   "reading_confidence": 1.0,
+   "extraction": "json"
+  },
+  {
+   "id": "C145",
+   "subject": "config:sensors.sensor_ps04a_signal_type",
+   "predicate": "config_value",
+   "value": "4-20mA",
+   "unit": null,
+   "applies_when": {
+    "known": false,
+    "sw_min": null,
+    "sw_max_exclusive": null
+   },
+   "evidence": [
+    "config_export::013"
+   ],
+   "docs": [
+    "config_export"
+   ],
+   "trust_rank": 2,
+   "status": "asserted",
+   "note": null,
+   "reading_confidence": 1.0,
+   "extraction": "json"
+  },
+  {
+   "id": "C146",
+   "subject": "config:sensors.sensor_ps40_zone",
+   "predicate": "config_value",
+   "value": "coolant_loop",
+   "unit": null,
+   "applies_when": {
+    "known": false,
+    "sw_min": null,
+    "sw_max_exclusive": null
+   },
+   "evidence": [
+    "config_export::014"
+   ],
+   "docs": [
+    "config_export"
+   ],
+   "trust_rank": 2,
+   "status": "asserted",
+   "note": null,
+   "reading_confidence": 1.0,
+   "extraction": "json"
+  },
+  {
+   "id": "C147",
+   "subject": "config:sensors.sensor_ps40_note",
+   "predicate": "config_value",
+   "value": "unrelated to HPU discharge circuit; do not map to sensor_ps04a_* keys",
+   "unit": null,
+   "applies_when": {
+    "known": false,
+    "sw_min": null,
+    "sw_max_exclusive": null
+   },
+   "evidence": [
+    "config_export::015"
+   ],
+   "docs": [
+    "config_export"
+   ],
+   "trust_rank": 2,
+   "status": "asserted",
+   "note": null,
+   "reading_confidence": 1.0,
+   "extraction": "json"
+  },
+  {
+   "id": "C148",
+   "subject": "config:alarms.A17.description",
+   "predicate": "config_value",
+   "value": "hydraulic_pressure_low",
+   "unit": null,
+   "applies_when": {
+    "known": false,
+    "sw_min": null,
+    "sw_max_exclusive": null
+   },
+   "evidence": [
+    "config_export::016"
+   ],
+   "docs": [
+    "config_export"
+   ],
+   "trust_rank": 2,
+   "status": "asserted",
+   "note": null,
+   "reading_confidence": 1.0,
+   "extraction": "json"
+  },
+  {
+   "id": "C149",
+   "subject": "config:alarms.A17.persistence_before_shutdown_seconds",
+   "predicate": "config_value",
+   "value": 10,
+   "unit": null,
+   "applies_when": {
+    "known": false,
+    "sw_min": null,
+    "sw_max_exclusive": null
+   },
+   "evidence": [
+    "config_export::017"
+   ],
+   "docs": [
+    "config_export"
+   ],
+   "trust_rank": 2,
+   "status": "asserted",
+   "note": null,
+   "reading_confidence": 1.0,
+   "extraction": "json"
+  },
+  {
+   "id": "C150",
+   "subject": "config:alarms.A17.shutdown_procedure_ref",
+   "predicate": "config_value",
+   "value": "4.7",
+   "unit": null,
+   "applies_when": {
+    "known": false,
+    "sw_min": null,
+    "sw_max_exclusive": null
+   },
+   "evidence": [
+    "config_export::018"
+   ],
+   "docs": [
+    "config_export"
+   ],
+   "trust_rank": 2,
+   "status": "asserted",
+   "note": null,
+   "reading_confidence": 1.0,
+   "extraction": "json"
+  },
+  {
+   "id": "C151",
+   "subject": "config:alarms.A18.description",
+   "predicate": "config_value",
+   "value": "hydraulic_pressure_high",
+   "unit": null,
+   "applies_when": {
+    "known": false,
+    "sw_min": null,
+    "sw_max_exclusive": null
+   },
+   "evidence": [
+    "config_export::019"
+   ],
+   "docs": [
+    "config_export"
+   ],
+   "trust_rank": 2,
+   "status": "asserted",
+   "note": null,
+   "reading_confidence": 1.0,
+   "extraction": "json"
+  },
+  {
+   "id": "C152",
+   "subject": "config:alarms.A18.persistence_before_shutdown_seconds",
+   "predicate": "config_value",
+   "value": null,
+   "unit": null,
+   "applies_when": {
+    "known": false,
+    "sw_min": null,
+    "sw_max_exclusive": null
+   },
+   "evidence": [
+    "config_export::020"
+   ],
+   "docs": [
+    "config_export"
+   ],
+   "trust_rank": 2,
+   "status": "asserted",
+   "note": null,
+   "reading_confidence": 1.0,
+   "extraction": "json"
+  },
+  {
+   "id": "C153",
+   "subject": "config:alarms.A19.description",
+   "predicate": "config_value",
+   "value": "pressure_sensor_signal_invalid",
+   "unit": null,
+   "applies_when": {
+    "known": false,
+    "sw_min": null,
+    "sw_max_exclusive": null
+   },
+   "evidence": [
+    "config_export::021"
+   ],
+   "docs": [
+    "config_export"
+   ],
+   "trust_rank": 2,
+   "status": "asserted",
+   "note": null,
+   "reading_confidence": 1.0,
+   "extraction": "json"
+  },
+  {
+   "id": "C154",
+   "subject": "config:alarms.A19.persistence_before_shutdown_seconds",
+   "predicate": "config_value",
+   "value": null,
+   "unit": null,
+   "applies_when": {
+    "known": false,
+    "sw_min": null,
+    "sw_max_exclusive": null
+   },
+   "evidence": [
+    "config_export::022"
+   ],
+   "docs": [
+    "config_export"
+   ],
+   "trust_rank": 2,
+   "status": "asserted",
+   "note": null,
+   "reading_confidence": 1.0,
+   "extraction": "json"
+  },
+  {
+   "id": "C155",
+   "subject": "config:controller_reset.min_pressure_bar_required_for_reset",
+   "predicate": "config_value",
+   "value": null,
+   "unit": null,
+   "applies_when": {
+    "known": false,
+    "sw_min": null,
+    "sw_max_exclusive": null
+   },
+   "evidence": [
+    "config_export::023"
+   ],
+   "docs": [
+    "config_export"
+   ],
+   "trust_rank": 2,
+   "status": "asserted",
+   "note": null,
+   "reading_confidence": 1.0,
+   "extraction": "json"
+  },
+  {
+   "id": "C156",
+   "subject": "config:controller_reset.max_pressure_bar_allowed_for_reset",
+   "predicate": "config_value",
+   "value": 50,
+   "unit": null,
+   "applies_when": {
+    "known": false,
+    "sw_min": null,
+    "sw_max_exclusive": null
+   },
+   "evidence": [
+    "config_export::024"
+   ],
+   "docs": [
+    "config_export"
+   ],
+   "trust_rank": 2,
+   "status": "asserted",
+   "note": null,
+   "reading_confidence": 1.0,
+   "extraction": "json"
+  },
+  {
+   "id": "C157",
+   "subject": "config:controller_reset.note",
+   "predicate": "config_value",
+   "value": "reset is blocked in firmware above max_pressure_bar_allowed_for_reset",
+   "unit": null,
+   "applies_when": {
+    "known": false,
+    "sw_min": null,
+    "sw_max_exclusive": null
+   },
+   "evidence": [
+    "config_export::025"
+   ],
+   "docs": [
+    "config_export"
+   ],
+   "trust_rank": 2,
+   "status": "asserted",
+   "note": null,
+   "reading_confidence": 1.0,
+   "extraction": "json"
+  },
+  {
+   "id": "C158",
+   "subject": "config:revision_applicability.sensor_ps04a_threshold_bar.applies_from_firmware",
+   "predicate": "config_value",
+   "value": "3.2",
+   "unit": null,
+   "applies_when": {
+    "known": false,
+    "sw_min": null,
+    "sw_max_exclusive": null
+   },
+   "evidence": [
+    "config_export::026"
+   ],
+   "docs": [
+    "config_export"
+   ],
+   "trust_rank": 2,
+   "status": "asserted",
+   "note": null,
+   "reading_confidence": 1.0,
+   "extraction": "json"
+  },
+  {
+   "id": "C159",
+   "subject": "config:revision_applicability.sensor_ps04_legacy_threshold_bar.value",
+   "predicate": "config_value",
+   "value": 180,
+   "unit": null,
+   "applies_when": {
+    "known": false,
+    "sw_min": null,
+    "sw_max_exclusive": null
+   },
+   "evidence": [
+    "config_export::027"
+   ],
+   "docs": [
+    "config_export"
+   ],
+   "trust_rank": 2,
+   "status": "asserted",
+   "note": null,
+   "reading_confidence": 1.0,
+   "extraction": "json"
+  },
+  {
+   "id": "C160",
+   "subject": "config:revision_applicability.sensor_ps04_legacy_threshold_bar.applies_before_firmware",
+   "predicate": "config_value",
+   "value": "3.2",
+   "unit": null,
+   "applies_when": {
+    "known": false,
+    "sw_min": null,
+    "sw_max_exclusive": null
+   },
+   "evidence": [
+    "config_export::028"
+   ],
+   "docs": [
+    "config_export"
+   ],
+   "trust_rank": 2,
+   "status": "asserted",
+   "note": null,
+   "reading_confidence": 1.0,
+   "extraction": "json"
+  },
+  {
+   "id": "C161",
+   "subject": "PLC-03.reset",
+   "predicate": "reset_min_pressure",
+   "value": null,
+   "unit": null,
+   "applies_when": {
+    "known": false,
+    "sw_min": null,
+    "sw_max_exclusive": null
+   },
+   "evidence": [
+    "config_export::023"
+   ],
+   "docs": [
+    "config_export"
+   ],
+   "trust_rank": 2,
+   "status": "explicitly_not_specified",
+   "note": "null in the export: no minimum pressure is required for reset",
+   "reading_confidence": 1.0,
+   "extraction": "json"
+  },
+  {
+   "id": "C162",
+   "subject": "config:sensors.sensor_ps04a_threshold_bar",
+   "predicate": "config_maps_to",
+   "value": {
+    "concept": "normal HPU discharge pressure (operating pressure setpoint)",
+    "entity": "PS-04A"
+   },
+   "unit": null,
+   "applies_when": {
+    "known": false,
+    "sw_min": null,
+    "sw_max_exclusive": null
+   },
+   "evidence": [
+    "config_export::010",
+    "config_export::026",
+    "operator_manual::026"
+   ],
+   "docs": [
+    "config_export",
+    "operator_manual"
+   ],
+   "trust_rank": 1,
+   "status": "inferred",
+   "note": "no document states this mapping. Basis: key names ps04a; value 200 equals the manual's normal pressure for 3.2+; applies_from_firmware 3.2 equals the manual's 'software revision 3.2 and later'. Do not map sensor_ps40_* keys (config note).",
+   "reading_confidence": 1.0,
+   "extraction": "rule"
+  },
+  {
+   "id": "C163",
+   "subject": "HPU.discharge_pressure",
+   "predicate": "normal_pressure",
+   "value": 200,
+   "unit": "bar",
+   "applies_when": {
+    "known": true,
+    "sw_min": "3.2",
+    "sw_max_exclusive": null
+   },
+   "evidence": [
+    "config_export::010"
+   ],
+   "docs": [
+    "config_export"
+   ],
+   "trust_rank": 2,
+   "status": "inferred",
+   "note": "via config_maps_to (inferred)",
+   "reading_confidence": 1.0,
+   "extraction": "json"
+  },
+  {
+   "id": "C164",
+   "subject": "HPU.discharge_pressure",
+   "predicate": "normal_pressure",
+   "value": 180,
+   "unit": "bar",
+   "applies_when": {
+    "known": true,
+    "sw_min": null,
+    "sw_max_exclusive": "3.2"
+   },
+   "evidence": [
+    "config_export::027",
+    "config_export::028"
+   ],
+   "docs": [
+    "config_export"
+   ],
+   "trust_rank": 2,
+   "status": "inferred",
+   "note": "config's own 'legacy threshold' entry; concept link inferred",
+   "reading_confidence": 1.0,
+   "extraction": "json"
+  },
+  {
+   "id": "C165",
+   "subject": "PS-40",
+   "predicate": "config_value",
+   "value": {
+    "zone": "coolant_loop"
+   },
+   "unit": null,
+   "applies_when": {
+    "known": false,
+    "sw_min": null,
+    "sw_max_exclusive": null
+   },
+   "evidence": [
+    "config_export::014",
+    "config_export::015"
+   ],
+   "docs": [
+    "config_export"
+   ],
+   "trust_rank": 2,
+   "status": "asserted",
+   "note": "config note: unrelated to HPU discharge circuit; do not map to sensor_ps04a_* keys",
+   "reading_confidence": 1.0,
+   "extraction": "json"
+  },
+  {
+   "id": "C166",
+   "subject": "screen:diagnostics",
+   "predicate": "displays_tag",
+   "value": "P.S.04-A",
+   "unit": null,
+   "applies_when": {
+    "known": true,
+    "sw_min": "3.2",
+    "sw_max_exclusive": "3.3"
+   },
+   "evidence": [
+    "screen_diagnostics::002"
+   ],
+   "docs": [
+    "screen_diagnostics"
+   ],
+   "trust_rank": 3,
+   "status": "observation",
+   "note": "resolves to PS-04A (variant_of: identifier differs from 'PS04A' only in punctuation/spacing/case (normalised both = PS04A); not a prefix match); screen note: shows the tag as printed on the physical unit label",
+   "reading_confidence": 0.8,
+   "extraction": "rule"
+  },
+  {
+   "id": "C167",
+   "subject": "PS-04A",
+   "predicate": "observed_raw_signal",
+   "value": "14.8 mA",
+   "unit": null,
+   "applies_when": {
+    "known": true,
+    "sw_min": "3.2",
+    "sw_max_exclusive": "3.3"
+   },
+   "evidence": [
+    "screen_diagnostics::002",
+    "screen_diagnostics::004"
+   ],
+   "docs": [
+    "screen_diagnostics"
+   ],
+   "trust_rank": 3,
+   "status": "observation",
+   "note": null,
+   "reading_confidence": 0.8,
+   "extraction": "rule"
+  },
+  {
+   "id": "C168",
+   "subject": "PS-04A",
+   "predicate": "observed_pressure",
+   "value": "200.3 bar",
+   "unit": "bar",
+   "applies_when": {
+    "known": true,
+    "sw_min": "3.2",
+    "sw_max_exclusive": "3.3"
+   },
+   "evidence": [
+    "screen_diagnostics::002",
+    "screen_diagnostics::005"
+   ],
+   "docs": [
+    "screen_diagnostics"
+   ],
+   "trust_rank": 3,
+   "status": "observation",
+   "note": null,
+   "reading_confidence": 0.8,
+   "extraction": "rule"
+  },
+  {
+   "id": "C169",
+   "subject": "PS-04A",
+   "predicate": "observed_calibration_status",
+   "value": "WITHIN TOLERANCE",
+   "unit": null,
+   "applies_when": {
+    "known": true,
+    "sw_min": "3.2",
+    "sw_max_exclusive": "3.3"
+   },
+   "evidence": [
+    "screen_diagnostics::002",
+    "screen_diagnostics::006"
+   ],
+   "docs": [
+    "screen_diagnostics"
+   ],
+   "trust_rank": 3,
+   "status": "observation",
+   "note": null,
+   "reading_confidence": 0.8,
+   "extraction": "rule"
+  },
+  {
+   "id": "C170",
+   "subject": "PS-04A",
+   "predicate": "observed_last_calibrated",
+   "value": "2026-01-09",
+   "unit": null,
+   "applies_when": {
+    "known": true,
+    "sw_min": "3.2",
+    "sw_max_exclusive": "3.3"
+   },
+   "evidence": [
+    "screen_diagnostics::002",
+    "screen_diagnostics::007"
+   ],
+   "docs": [
+    "screen_diagnostics"
+   ],
+   "trust_rank": 3,
+   "status": "observation",
+   "note": null,
+   "reading_confidence": 0.8,
+   "extraction": "rule"
+  },
+  {
+   "id": "C171",
+   "subject": "PS-04A",
+   "predicate": "observed_firmware_rev",
+   "value": "3.2.1",
+   "unit": null,
+   "applies_when": {
+    "known": true,
+    "sw_min": "3.2",
+    "sw_max_exclusive": "3.3"
+   },
+   "evidence": [
+    "screen_diagnostics::002",
+    "screen_diagnostics::008"
+   ],
+   "docs": [
+    "screen_diagnostics"
+   ],
+   "trust_rank": 3,
+   "status": "observation",
+   "note": null,
+   "reading_confidence": 0.8,
+   "extraction": "rule"
+  },
+  {
+   "id": "C172",
+   "subject": "HPU.discharge_pressure",
+   "predicate": "observed_pressure",
+   "value": "200 bar",
+   "unit": null,
+   "applies_when": {
+    "known": true,
+    "sw_min": "3.2",
+    "sw_max_exclusive": "3.3"
+   },
+   "evidence": [
+    "screen_home::002"
+   ],
+   "docs": [
+    "screen_home"
+   ],
+   "trust_rank": 3,
+   "status": "observation",
+   "note": "home screen, one unit at one moment",
+   "reading_confidence": 0.8,
+   "extraction": "rule"
+  },
+  {
+   "id": "C173",
+   "subject": "HPU",
+   "predicate": "observed_interlock_state",
+   "value": {
+    "key": "iv21_open",
+    "state": "OPEN"
+   },
+   "unit": null,
+   "applies_when": {
+    "known": true,
+    "sw_min": "3.2",
+    "sw_max_exclusive": "3.3"
+   },
+   "evidence": [
+    "screen_home::004"
+   ],
+   "docs": [
+    "screen_home"
+   ],
+   "trust_rank": 3,
+   "status": "observation",
+   "note": null,
+   "reading_confidence": 0.8,
+   "extraction": "rule"
+  },
+  {
+   "id": "C174",
+   "subject": "HPU",
+   "predicate": "observed_interlock_state",
+   "value": {
+    "key": "estop_reset",
+    "state": "RESET"
+   },
+   "unit": null,
+   "applies_when": {
+    "known": true,
+    "sw_min": "3.2",
+    "sw_max_exclusive": "3.3"
+   },
+   "evidence": [
+    "screen_home::005"
+   ],
+   "docs": [
+    "screen_home"
+   ],
+   "trust_rank": 3,
+   "status": "observation",
+   "note": null,
+   "reading_confidence": 0.8,
+   "extraction": "rule"
+  },
+  {
+   "id": "C175",
+   "subject": "HPU",
+   "predicate": "observed_interlock_state",
+   "value": {
+    "key": "maintenance_panel_closed",
+    "state": "CLOSED"
+   },
+   "unit": null,
+   "applies_when": {
+    "known": true,
+    "sw_min": "3.2",
+    "sw_max_exclusive": "3.3"
+   },
+   "evidence": [
+    "screen_home::006"
+   ],
+   "docs": [
+    "screen_home"
+   ],
+   "trust_rank": 3,
+   "status": "observation",
+   "note": null,
+   "reading_confidence": 0.8,
+   "extraction": "rule"
+  },
+  {
+   "id": "C176",
+   "subject": "HPU",
+   "predicate": "observed_interlock_state",
+   "value": {
+    "key": "fluid_level_normal",
+    "state": "NORMAL"
+   },
+   "unit": null,
+   "applies_when": {
+    "known": true,
+    "sw_min": "3.2",
+    "sw_max_exclusive": "3.3"
+   },
+   "evidence": [
+    "screen_home::007"
+   ],
+   "docs": [
+    "screen_home"
+   ],
+   "trust_rank": 3,
+   "status": "observation",
+   "note": null,
+   "reading_confidence": 0.8,
+   "extraction": "rule"
+  },
+  {
+   "id": "C177",
+   "subject": "A17",
+   "predicate": "observed_alarm_state",
+   "value": {
+    "state": "CLEARED",
+    "time": "08:14:02",
+    "description": "Hydraulic Pressure Low"
+   },
+   "unit": null,
+   "applies_when": {
+    "known": true,
+    "sw_min": "3.2",
+    "sw_max_exclusive": "3.3"
+   },
+   "evidence": [
+    "screen_alarms::002"
+   ],
+   "docs": [
+    "screen_alarms"
+   ],
+   "trust_rank": 3,
+   "status": "observation",
+   "note": null,
+   "reading_confidence": 0.8,
+   "extraction": "rule"
+  },
+  {
+   "id": "C178",
+   "subject": "A19",
+   "predicate": "observed_alarm_state",
+   "value": {
+    "state": "CLEARED",
+    "time": "03-11 22:40",
+    "description": "Pressure Sensor Signal Invalid"
+   },
+   "unit": null,
+   "applies_when": {
+    "known": true,
+    "sw_min": "3.2",
+    "sw_max_exclusive": "3.3"
+   },
+   "evidence": [
+    "screen_alarms::003"
+   ],
+   "docs": [
+    "screen_alarms"
+   ],
+   "trust_rank": 3,
+   "status": "observation",
+   "note": null,
+   "reading_confidence": 0.8,
+   "extraction": "rule"
+  },
+  {
+   "id": "C179",
+   "subject": "A17",
+   "predicate": "observed_alarm_state",
+   "value": {
+    "state": "ACTIVE",
+    "time": "08:14:57",
+    "description": "Hydraulic Pressure Low"
+   },
+   "unit": null,
+   "applies_when": {
+    "known": true,
+    "sw_min": "3.2",
+    "sw_max_exclusive": "3.3"
+   },
+   "evidence": [
+    "screen_alarms::004"
+   ],
+   "docs": [
+    "screen_alarms"
+   ],
+   "trust_rank": 3,
+   "status": "observation",
+   "note": null,
+   "reading_confidence": 0.8,
+   "extraction": "rule"
+  },
+  {
+   "id": "C180",
+   "subject": "A18",
+   "predicate": "observed_alarm_state",
+   "value": {
+    "state": "INACTIVE",
+    "time": "--",
+    "description": "Hydraulic Pressure High"
+   },
+   "unit": null,
+   "applies_when": {
+    "known": true,
+    "sw_min": "3.2",
+    "sw_max_exclusive": "3.3"
+   },
+   "evidence": [
+    "screen_alarms::005"
+   ],
+   "docs": [
+    "screen_alarms"
+   ],
+   "trust_rank": 3,
+   "status": "observation",
+   "note": null,
+   "reading_confidence": 0.8,
+   "extraction": "rule"
+  },
+  {
+   "id": "C181",
+   "subject": "A17",
+   "predicate": "observed_persistence",
+   "value": {
+    "active_s": 14,
+    "threshold_s": 10,
+    "exceeds_threshold": true,
+    "procedure": "4.7"
+   },
+   "unit": null,
+   "applies_when": {
+    "known": true,
+    "sw_min": "3.2",
+    "sw_max_exclusive": "3.3"
+   },
+   "evidence": [
+    "screen_alarms::007"
+   ],
+   "docs": [
+    "screen_alarms"
+   ],
+   "trust_rank": 3,
+   "status": "observation",
+   "note": null,
+   "reading_confidence": 0.8,
+   "extraction": "rule"
+  },
+  {
+   "id": "C182",
+   "subject": "PS-04A",
+   "predicate": "calibration_record",
+   "value": {
+    "date": "2026-01-09",
+    "technician": "R. Okafor",
+    "points": [
+     {
+      "Point": "Zero (0%)",
+      "Reference": "0 bar",
+      "Reading": "0.1 bar",
+      "Result": "PASS"
+     },
+     {
+      "Point": "Mid (50%)",
+      "Reference": "100 bar",
+      "Reading": "99.6 bar",
+      "Result": "PASS"
+     },
+     {
+      "Point": "Span (100%)",
+      "Reference": "200 bar",
+      "Reading": "199.4 bar",
+      "Result": "PASS"
+     }
+    ]
+   },
+   "unit": null,
+   "applies_when": {
+    "known": false,
+    "sw_min": null,
+    "sw_max_exclusive": null
+   },
+   "evidence": [
+    "calibration_scan::003",
+    "calibration_scan::005",
+    "calibration_scan::006",
+    "calibration_scan::009",
+    "calibration_scan::010",
+    "calibration_scan::011"
+   ],
+   "docs": [
+    "calibration_scan"
+   ],
+   "trust_rank": 2,
+   "status": "observation",
+   "note": "scanned copy from a field service binder, 'uncontrolled copy'; signature and date lines blank",
+   "reading_confidence": 0.8,
+   "extraction": "rule"
+  },
+  {
+   "id": "C183",
+   "subject": "PS-04A",
+   "predicate": "calibration_span_reference",
+   "value": 200,
+   "unit": "bar",
+   "applies_when": {
+    "known": true,
+    "sw_min": "3.2",
+    "sw_max_exclusive": null
+   },
+   "evidence": [
+    "calibration_scan::013"
+   ],
+   "docs": [
+    "calibration_scan"
+   ],
+   "trust_rank": 2,
+   "status": "asserted",
+   "note": null,
+   "reading_confidence": 0.8,
+   "extraction": "rule"
+  },
+  {
+   "id": "C184",
+   "subject": "PS-04",
+   "predicate": "calibration_span_reference",
+   "value": 180,
+   "unit": "bar",
+   "applies_when": {
+    "known": true,
+    "sw_min": null,
+    "sw_max_exclusive": "3.2"
+   },
+   "evidence": [
+    "calibration_scan::014"
+   ],
+   "docs": [
+    "calibration_scan"
+   ],
+   "trust_rank": 2,
+   "status": "asserted",
+   "note": "'for historical comparison only. Do not use the 180 bar figure to evaluate PS-04A'",
+   "reading_confidence": 0.8,
+   "extraction": "rule"
+  },
+  {
+   "id": "C185",
+   "subject": "PS-04A",
+   "predicate": "calibration_interval",
+   "value": null,
+   "unit": null,
+   "applies_when": {
+    "known": false,
+    "sw_min": null,
+    "sw_max_exclusive": null
+   },
+   "evidence": [
+    "calibration_scan::015"
+   ],
+   "docs": [
+    "calibration_scan"
+   ],
+   "trust_rank": 2,
+   "status": "explicitly_not_specified",
+   "note": "the record states recalibration frequency should be confirmed against the maintenance schedule, which is not in the binder",
+   "reading_confidence": 0.8,
+   "extraction": "rule"
+  },
+  {
+   "id": "C186",
+   "subject": "HPU.discharge_pressure",
+   "predicate": "observed_pressure",
+   "value": 175,
+   "unit": "bar",
+   "applies_when": {
+    "known": false,
+    "sw_min": null,
+    "sw_max_exclusive": null
+   },
+   "evidence": [
+    "site_survey_notes::005"
+   ],
+   "docs": [
+    "site_survey_notes"
+   ],
+   "trust_rank": 5,
+   "status": "low_trust_observation",
+   "note": "local panel gauge, admitted possibly off, no calibrated reference; unreviewed; undated; software revision of the unit not recorded",
+   "reading_confidence": 1.0,
+   "extraction": "rule"
+  }
+ ],
+ "conflicts": [
+  {
+   "id": "X01",
+   "kind": "scoped_coexistence",
+   "subject": "HPU.discharge_pressure",
+   "predicate": "normal_pressure",
+   "claim_ids": [
+    "C047",
+    "C085",
+    "C048"
+   ],
+   "description": "HPU.discharge_pressure normal_pressure: 180 applies to software < 3.2; 200 applies to software >= 3.2. The scopes are disjoint, so these are two correct values for different software revisions, not a contradiction.",
+   "resolution": "keep both; choose by the unit's software revision"
+  },
+  {
+   "id": "X02",
+   "kind": "observation_disagrees",
+   "subject": "HPU.discharge_pressure",
+   "predicate": "observed_pressure",
+   "claim_ids": [
+    "C186",
+    "C047",
+    "C048",
+    "C085"
+   ],
+   "description": "A field note reports about 175 bar, which matches neither normal setpoint ([180, 200] bar). The note's own caveats: uncalibrated gauge, unreviewed, undated, software revision not recorded, so it cannot be tied to either setpoint.",
+   "resolution": "do not adjudicate; the note cannot override manuals; a calibrated check would be needed"
+  },
+  {
+   "id": "X03",
+   "kind": "ambiguity",
+   "subject": "PLC-03.reset",
+   "predicate": "reset_boundary",
+   "claim_ids": [
+    "C082",
+    "C089",
+    "C082"
+   ],
+   "description": "Manuals prohibit reset 'above 50 bar' and permit it only 'below 50 bar'; behaviour at exactly 50 bar is not stated. The firmware config blocks reset 'above' 50, which suggests exactly that value is allowed, but no document says so.",
+   "resolution": "treat as: do not reset above 50 bar; reset below 50 bar is explicitly permitted; the exact boundary value is unspecified"
+  },
+  {
+   "id": "X04",
+   "kind": "ambiguity",
+   "subject": "PLC-03",
+   "predicate": "connected_to",
+   "claim_ids": [
+    "C112"
+   ],
+   "description": "Hydraulic schematic: the line PLC-03 - HPU is drawn in the colour the legend assigns to 'hydraulic fluid path', but one end is the controller, which carries signals, not fluid. The legend assigns control/signal connections to the purple lines only.",
+   "resolution": "report purple lines as the control/signal connections; flag this grey line as unexplained"
+  },
+  {
+   "id": "X05",
+   "kind": "ambiguity",
+   "subject": "HPU.discharge_pressure",
+   "predicate": "setpoint_applicability",
+   "claim_ids": [
+    "C067",
+    "C048"
+   ],
+   "description": "ECN-1042 justifies the 200 bar setpoint by benefit on 'Series-7 units manufactured after 2024', while the manuals scope 200 bar by software revision (3.2 and later) and PS-04A requires firmware >= 3.2. No source says whether older-built units that run revision >= 3.2 firmware use 200 bar, or whether newer-built units on older firmware may.",
+   "resolution": "best-supported reading: applicability follows the software revision (and PS-04A), not the build year; state the uncertainty"
+  }
+ ],
+ "gaps": [
+  {
+   "id": "G01",
+   "topic": "Maximum continuous operating temperature of PS-04A",
+   "terms": [
+    "\\btemperature\\b",
+    "°\\s?C",
+    "\\bdeg(?:rees)? ?C\\b",
+    "operating range",
+    "thermal"
+   ],
+   "entity_aliases": [
+    "PS-04A",
+    "PS04A",
+    "P04A",
+    "P.S.04-A",
+    "Pressure Sensor 04A",
+    "PRESSURE XDCR"
+   ],
+   "segments_searched": 325,
+   "hits": [],
+   "near_misses": [
+    "operator_manual::025",
+    "legacy_manual_v1::020",
+    "hydraulic_fluid_sds::014",
+    "hydraulic_fluid_sds::022"
+   ],
+   "finding": "not_found",
+   "related_claims": [],
+   "note": "No document gives a temperature rating for PS-04A. Temperature mentions elsewhere are about other things.",
+   "doc_scope": []
+  },
+  {
+   "id": "G02",
+   "topic": "Calibration interval for a voltage sensor on the electrical system diagram",
+   "terms": [
+    "voltage (?:sensor|transducer|transmitter|monitor)",
+    "calibration interval",
+    "recalibrat"
+   ],
+   "entity_aliases": [
+    "voltage sensor",
+    "voltage transducer",
+    "voltage monitor",
+    "voltage transmitter",
+    "SENSOR LOOP POWER"
+   ],
+   "segments_searched": 325,
+   "hits": [],
+   "near_misses": [
+    "electrical_diagram::007",
+    "electrical_diagram::013",
+    "calibration_scan::015"
+   ],
+   "finding": "not_found",
+   "related_claims": [
+    "C185"
+   ],
+   "note": "The electrical schematic shows no voltage sensor (only a 24VDC sensor-loop POWER SUPPLY and a pressure transducer loop reference), so the question's premise is not supported; and no source gives a calibration interval for any sensor (the PS-04A calibration record says none is specified).",
+   "doc_scope": []
+  },
+  {
+   "id": "G03",
+   "topic": "Who approved ECN-1058",
+   "terms": [
+    "approv",
+    "signed",
+    "authori[sz]ed by",
+    "reviewed by",
+    "signator"
+   ],
+   "entity_aliases": [
+    "ECN-1058"
+   ],
+   "segments_searched": 325,
+   "hits": [],
+   "near_misses": [
+    "ecn_1058::008",
+    "terminology_glossary::012"
+   ],
+   "finding": "not_found",
+   "related_claims": [
+    "C064"
+   ],
+   "note": "ECN-1058's header lists number, title, effective date, references and status ('Released') but no approver or signature. 'Released' does not say who approved it.",
+   "doc_scope": [
+    "ecn_1058"
+   ]
+  },
+  {
+   "id": "G04",
+   "topic": "Mean time between failures (MTBF) of isolation valve IV-21",
+   "terms": [
+    "\\bMTBF\\b",
+    "mean time",
+    "failure rate",
+    "reliability",
+    "service life"
+   ],
+   "entity_aliases": [
+    "IV-21",
+    "IV21",
+    "Isolation Valve"
+   ],
+   "segments_searched": 325,
+   "hits": [],
+   "near_misses": [],
+   "finding": "not_found",
+   "related_claims": [],
+   "note": "No reliability data for IV-21 (or any component) appears in the package.",
+   "doc_scope": []
+  },
+  {
+   "id": "G05",
+   "topic": "Compatibility with a 3-phase 400V supply",
+   "terms": [
+    "\\b400\\s?V\\b",
+    "3-?\\s?phase",
+    "three[- ]phase",
+    "supply voltage"
+   ],
+   "entity_aliases": [],
+   "segments_searched": 325,
+   "hits": [],
+   "near_misses": [
+    "component_register::011",
+    "hydraulic_fluid_sds::006"
+   ],
+   "finding": "not_found",
+   "related_claims": [
+    "C035",
+    "C039"
+   ],
+   "note": "Only 480V is mentioned (Q1 main disconnect 480V incoming; T1 480:120V control power). Nothing states the phase count or compatibility with 400V.",
+   "doc_scope": []
+  },
+  {
+   "id": "G06",
+   "topic": "Does the training slide deck introduce any alarm not in the manuals?",
+   "terms": [
+    "\\bA\\d{2}\\b"
+   ],
+   "entity_aliases": [],
+   "segments_searched": 325,
+   "hits": [],
+   "near_misses": [
+    "operator_manual::028",
+    "maintenance_manual::010",
+    "maintenance_manual::011",
+    "maintenance_manual::017",
+    "legacy_manual_v1::023",
+    "ecn_1042::014",
+    "ecn_1058::005",
+    "ecn_1058::010"
+   ],
+   "finding": "not_found",
+   "related_claims": [],
+   "note": "The slides contain no alarm codes.",
+   "doc_scope": [
+    "training_slides"
+   ]
+  }
+ ],
+ "meta": {
+  "segments": 325,
+  "alias_collisions": [],
+  "coverage": {
+   "alarm_reference": {
+    "content_segments": 6,
+    "cited_by_a_claim": 5
+   },
+   "calibration_scan": {
+    "content_segments": 16,
+    "cited_by_a_claim": 9
+   },
+   "component_register": {
+    "content_segments": 12,
+    "cited_by_a_claim": 12
+   },
+   "config_export": {
+    "content_segments": 28,
+    "cited_by_a_claim": 28
+   },
+   "ecn_1042": {
+    "content_segments": 10,
+    "cited_by_a_claim": 9
+   },
+   "ecn_1058": {
+    "content_segments": 8,
+    "cited_by_a_claim": 7
+   },
+   "electrical_diagram": {
+    "content_segments": 18,
+    "cited_by_a_claim": 7
+   },
+   "hydraulic_fluid_sds": {
+    "content_segments": 14,
+    "cited_by_a_claim": 0
+   },
+   "hydraulic_schematic": {
+    "content_segments": 21,
+    "cited_by_a_claim": 10
+   },
+   "legacy_manual_v1": {
+    "content_segments": 14,
+    "cited_by_a_claim": 5
+   },
+   "maintenance_manual": {
+    "content_segments": 11,
+    "cited_by_a_claim": 6
+   },
+   "operator_manual": {
+    "content_segments": 19,
+    "cited_by_a_claim": 13
+   },
+   "revision_history": {
+    "content_segments": 5,
+    "cited_by_a_claim": 5
+   },
+   "screen_alarms": {
+    "content_segments": 7,
+    "cited_by_a_claim": 5
+   },
+   "screen_diagnostics": {
+    "content_segments": 11,
+    "cited_by_a_claim": 6
+   },
+   "screen_home": {
+    "content_segments": 12,
+    "cited_by_a_claim": 5
+   },
+   "site_survey_notes": {
+    "content_segments": 7,
+    "cited_by_a_claim": 1
+   },
+   "terminology_glossary": {
+    "content_segments": 12,
+    "cited_by_a_claim": 1
+   },
+   "training_slides": {
+    "content_segments": 13,
+    "cited_by_a_claim": 6
+   },
+   "wiring_diagram": {
+    "content_segments": 14,
+    "cited_by_a_claim": 5
+   }
+  }
+ }
+}

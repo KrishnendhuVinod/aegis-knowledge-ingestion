@@ -1,0 +1,54 @@
+{
+  "model": "gemini-3.1-flash-lite",
+  "prompt": "You are transcribing a technical image for a documentation database. Copy every identifier EXACTLY as printed, keeping punctuation, spacing and case (for example 'P.S.04-A' must stay 'P.S.04-A'; never normalise, correct or guess). If something is illegible or you are unsure, put it in 'uncertain' instead of guessing. Return ONLY JSON with these keys (use empty lists/strings when not applicable): {\"title\": str, \"fields\": [{\"label\": str, \"value\": str}], \"tables\": [{\"columns\": [str], \"rows\": [[str]]}], \"nodes\": [str], \"edges\": [{\"from\": str, \"to\": str}], \"text_blocks\": [str], \"uncertain\": [str]}. This is a schematic diagram. List every box label in 'nodes' and every visible line between two boxes in 'edges' (only if a line visibly connects them). Include rotated or faint annotations in 'text_blocks'. Leave fields/tables empty.",
+  "response": {
+    "title": "Aegis Series-7 HCS — Electrical Schematic (AEG-DWG-E02)",
+    "fields": [],
+    "tables": [],
+    "nodes": [
+      "MAIN DISCONNECT Q1",
+      "CONTROL XFMR T1 480:120V",
+      "PLC-03 24VDC POWER SUPPLY",
+      "PLC-03 I/O RACK",
+      "E-STOP SAFETY RELAY KA1",
+      "SENSOR LOOP POWER 24VDC",
+      "IV-21 VALVE DRIVER"
+    ],
+    "edges": [
+      {
+        "from": "MAIN DISCONNECT Q1",
+        "to": "CONTROL XFMR T1 480:120V"
+      },
+      {
+        "from": "CONTROL XFMR T1 480:120V",
+        "to": "PLC-03 24VDC POWER SUPPLY"
+      },
+      {
+        "from": "CONTROL XFMR T1 480:120V",
+        "to": "PLC-03 I/O RACK"
+      },
+      {
+        "from": "PLC-03 24VDC POWER SUPPLY",
+        "to": "PLC-03 I/O RACK"
+      },
+      {
+        "from": "PLC-03 24VDC POWER SUPPLY",
+        "to": "SENSOR LOOP POWER 24VDC"
+      },
+      {
+        "from": "PLC-03 I/O RACK",
+        "to": "E-STOP SAFETY RELAY KA1"
+      },
+      {
+        "from": "PLC-03 I/O RACK",
+        "to": "IV-21 VALVE DRIVER"
+      }
+    ],
+    "text_blocks": [
+      "Power distribution and interlock wiring",
+      "feeds pressure transducer loop (see wiring diagram AEG-DWG-W03)",
+      "TB-7 REF: PRESSURE XDCR LOOP"
+    ],
+    "uncertain": []
+  }
+}
